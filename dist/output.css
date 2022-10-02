@@ -666,6 +666,11 @@ video {
   margin-bottom: 0.5rem;
 }
 
+.mx-2 {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
 .mr-3 {
   margin-right: 0.75rem;
 }
@@ -696,6 +701,14 @@ video {
 
 .mt-16 {
   margin-top: 4rem;
+}
+
+.ml-2 {
+  margin-left: 0.5rem;
+}
+
+.mr-2 {
+  margin-right: 0.5rem;
 }
 
 .block {
@@ -750,6 +763,18 @@ video {
   height: 2.5rem;
 }
 
+.h-\[\] {
+  height: ;
+}
+
+.h-\[300\] {
+  height: 300;
+}
+
+.h-\[300vh\] {
+  height: 300vh;
+}
+
 .w-full {
   width: 100%;
 }
@@ -776,6 +801,18 @@ video {
 
 .w-\[200px\] {
   width: 200px;
+}
+
+.w-9 {
+  width: 2.25rem;
+}
+
+.w-\[\] {
+  width: ;
+}
+
+.w-\[250px\] {
+  width: 250px;
 }
 
 .-translate-x-full {
@@ -900,7 +937,7 @@ video {
 
 .bg-secondary {
   --tw-bg-opacity: 1;
-  background-color: rgb(29 32 39 / var(--tw-bg-opacity));
+  background-color: rgb(35 40 45 / var(--tw-bg-opacity));
 }
 
 .bg-white {
@@ -925,6 +962,14 @@ video {
 .bg-yellow-400 {
   --tw-bg-opacity: 1;
   background-color: rgb(250 204 21 / var(--tw-bg-opacity));
+}
+
+.fill-secondary {
+  fill: #23282D;
+}
+
+.fill-primary {
+  fill: #f8f8f8;
 }
 
 .p-4 {
@@ -970,6 +1015,11 @@ video {
   padding-bottom: 0.625rem;
 }
 
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
 .pr-4 {
   padding-right: 1rem;
 }
@@ -1011,6 +1061,11 @@ video {
   line-height: 1.75rem;
 }
 
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
 .font-normal {
   font-weight: 400;
 }
@@ -1023,9 +1078,13 @@ video {
   font-weight: 700;
 }
 
+.font-semibold {
+  font-weight: 600;
+}
+
 .text-secondary {
   --tw-text-opacity: 1;
-  color: rgb(29 32 39 / var(--tw-text-opacity));
+  color: rgb(35 40 45 / var(--tw-text-opacity));
 }
 
 .text-gray-400 {
@@ -1073,8 +1132,16 @@ video {
   transition-duration: 700ms;
 }
 
+.duration-300 {
+  transition-duration: 300ms;
+}
+
 .ease-in-out {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hover\:ml-2:hover {
+  margin-left: 0.5rem;
 }
 
 .hover\:border-third:hover {
@@ -1241,6 +1308,10 @@ video {
     height: 500px;
   }
 
+  .sm\:h-\[300px\] {
+    height: 300px;
+  }
+
   .sm\:w-1\/2 {
     width: 50%;
   }
@@ -1354,6 +1425,10 @@ video {
 
   .md\:font-medium {
     font-weight: 500;
+  }
+
+  .md\:font-normal {
+    font-weight: 400;
   }
 
   .md\:hover\:bg-transparent:hover {
