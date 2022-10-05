@@ -8,9 +8,10 @@ module.exports = {
       },
       colors: {
         primary : "#f8f8f8",
+        // primary : "#f2f1f7",
         secondary : "#23282D",
         third : "#7269E3",
-        fourth : "#fcfcfc",
+        fourth : "#fefefe",
       },
       fontFamily: {
         'abril': ['Abril Fatface', 'cursive'],
