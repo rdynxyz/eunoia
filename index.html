@@ -1,508 +1,561 @@
 <!doctype html>
-<html>
+<html  class="scroll-smooth">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link
-        href="./dist/output.css" rel="stylesheet">
-        <!--Font  -->
-        <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet"/>
-        <link href="https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap" rel="stylesheet"/>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet"/>
-        <link href="https://fonts.googleapis.com/css2?family=Lora:wght@600&display=swap" rel="stylesheet"/>
-        <link href="https://fonts.googleapis.com/css2?family=Volkhov:wght@700&display=swap" rel="stylesheet"/>
-        <link rel="stylesheet" href="./src/css/owl.carousel.min.css">
-        <link rel="stylesheet" href="./src/css/owl.theme.default.min.css">
-        <link rel="stylesheet" href="./src/css/style.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./dist/output.css" rel="stylesheet">
+    <!--Font  -->
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@600&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Volkhov:wght@700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./src/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./src/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+</head>
 
-    <body class="bg-primary text-secondary font-poppins font-normal text-base">
-        <nav class="w-full px-8 bg-secondary h-[10vh] border-gray-200  dark:border-gray-700 flex z-[1000] fixed sm:relative">
-            <div class="container flex flex-wrap justify-between items-center mx-auto h-full z-10">
-                <a href="#" class="flex items-center">
-                    <img src="./src/assets/images/eunoia/eunoia.png" class="mr-3 h-6 sm:h-10">
-                </a>
-                <button data-collapse-toggle="mobile-menu" type="button" class="inline-flex justify-center items-center ml-3 text-gray-400 rounded-lg md:hidden hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-300 dark:text-gray-400 dark:hover:text-white dark:focus:ring-gray-500" aria-controls="mobile-menu-2" aria-expanded="false">
-                    <span class="sr-only">Open main menu</span>
-                    <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path>
-                    </svg>
+<body class="bg-primary text-secondary font-poppins font-normal text-base">
+    <!-- Navbar -->
+    <nav
+        class="w-full px-8 bg-secondary h-[10vh] border-gray-200  dark:border-gray-700 flex z-[1000] fixed sm:relative">
+        <div class="container flex flex-wrap justify-between items-center mx-auto h-full z-10">
+            <a href="#" class="flex items-center">
+                <img src="./src/assets/images/eunoia/eunoia.png" class="mr-3 h-6 sm:h-10">
+            </a>
+            <button data-collapse-toggle="mobile-menu" type="button"
+                class="inline-flex justify-center items-center ml-3 text-gray-400 rounded-lg md:hidden hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-300 dark:text-gray-400 dark:hover:text-white dark:focus:ring-gray-500"
+                aria-controls="mobile-menu-2" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewbox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                        d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                        clip-rule="evenodd"></path>
+                </svg>
+            </button>
+            <div class="hidden w-full md:block md:w-auto " id="mobile-menu">
+                <ul
+                    class="flex flex-col p-4 mt-10 bg-secondary rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-normal md:border-0 z-10">
+                    <li>
+                        <a href="index.html"
+                            class="block py-2 pr-4 pl-3 text-third rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 dark:hover:bg-gray-700 hover:text-third md:dark:hover:bg-transparen duration-300">Home</a>
+                    </li>
+                    <li>
+                        <a href="#about-section"
+                            class="block py-2 pr-4 pl-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 dark:hover:bg-gray-700 hover:text-third md:dark:hover:bg-transparen duration-300">About</a>
+                    </li>
+                    <li>
+                        <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
+                            class="flex justify-between items-center py-2 pr-4 pl-3 w-full text-primary rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 hover:text-third md:p-0 md:w-auto  dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent duration-300">Services
+                            <svg class="ml-1 w-5 h-5" aria-hidden="true" fill="currentColor" viewbox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                        </button>
+
+                        <div id="dropdownNavbar"
+                            class="hidden z-10 w-44 font-normal bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700 dark:divide-gray-600"
+                            data-popper-reference-hidden="" data-popper-escaped="" data-popper-placement="bottom"
+                            style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate(0px, 485px);">
+                            <ul class="py-1 text-sm text-gray-700 dark:text-gray-400"
+                                aria-labelledby="dropdownLargeButton">
+                                <li>
+                                    <a href="webperusahaan.html"
+                                        class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Web
+                                        Perusahaan</a>
+                                </li>
+                                <li>
+                                    <a href="webtokoonline.html"
+                                        class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Web
+                                        Toko Online</a>
+                                </li>
+                                <li>
+                                    <a href="webpersonal.html"
+                                        class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Web
+                                        Personal</a>
+                                </li>
+                            </ul>
+                            <!-- <div class="py-1">
+                                <a href="#" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white">Sign out</a>
+                            </div> -->
+                        </div>
+                    </li>
+                    <li>
+                        <a href="portfolio.html"
+                            class="block py-2 pr-4 pl-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 dark:hover:bg-gray-700 hover:text-third md:dark:hover:bg-transparen duration-300">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="contact.html"
+                            class="block py-2 pr-4 pl-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 dark:hover:bg-gray-700 hover:text-third md:dark:hover:bg-transparen duration-300">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Page -->
+    <div class="bg-secondary z-0 w-full flex flex-col mx-auto px-4 h-[100vh] sm:h-[90vh] sm:mt-0 sm:flex-row sm:px4">
+        <div class="container mx-auto flex-col flex sm:flex-row h-full">
+            <div
+                class="w-full sm:w-1/2 h-1/2 flex flex-col justify-end items-center mx-auto px-6 sm:h-full sm:justify-center sm:items-start z-0 ">
+                <div class="flex">
+                    <h1 class="font-bold text-4xl  sm:text-5xl text-third">WEB</h1>
+                    <h1 class="font-bold text-4xl sm:text-5xl ml-[10px] text-primary">DESIGNER</h1>
+                </div>
+                <h1 class="font-bold text-4xl sm:text-5xl text-primary">AND DEVELOPER</h1>
+                <div class="w-full sm:w-3/4 ">
+                    <h1 class="text-center sm:text-left mt-3 text-primary">Kembangkan bisnismu dengan membuat website
+                        terbaik dengan jasa kami. Because a good website makes great business.
+                </div>
+                </h1>
+                <button type="button"
+                    class=" text-primary border-2 border-third bg-third white hover:bg-transparent hover:border-third hover:text-third focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded text-base px-5 py-2.5 text-center mt-4 dark:focus:ring-blue-800 duration-300 w-44">
+                    Mulai Konsultasi
                 </button>
-                <div class="hidden w-full md:block md:w-auto " id="mobile-menu">
-                    <ul class="flex flex-col p-4 mt-10 bg-secondary rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-normal md:border-0 z-10">
-                        <li>
-                            <a href="#" class="block py-2 pr-4 pl-3 text-third rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 dark:hover:bg-gray-700 hover:text-third md:dark:hover:bg-transparen duration-300">Home</a>
-                        </li>
-                        <li>
-                            <a href="#about-section" class="block py-2 pr-4 pl-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 dark:hover:bg-gray-700 hover:text-third md:dark:hover:bg-transparen duration-300">About</a>
-                        </li>
-                        <li>
-                            <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="flex justify-between items-center py-2 pr-4 pl-3 w-full text-primary rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 hover:text-third md:p-0 md:w-auto  dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent duration-300">Services
-                                <svg class="ml-1 w-5 h-5" aria-hidden="true" fill="currentColor" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
-                                </svg>
-                            </button>
-
-                            <div id="dropdownNavbar" class="hidden z-10 w-44 font-normal bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700 dark:divide-gray-600" data-popper-reference-hidden="" data-popper-escaped="" data-popper-placement="bottom" style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate(0px, 485px);">
-                                <ul class="py-1 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
-                                    <li>
-                                        <a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Web
-                                                                                                                                                                                                                        Perusahaan</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Web
-                                                                                                                                                                                                                        Toko Online</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Web
-                                                                                                                                                                                                                        Personal</a>
-                                    </li>
-                                </ul>
-                                <!-- <div class="py-1">
-                                                                                                                                                                    <a href="#" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white">Sign out</a>
-                                                                                                                                                                </div> -->
-                            </div>
-                        </li>
-                        <li>
-                            <a href="portfolio.html" class="block py-2 pr-4 pl-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 dark:hover:bg-gray-700 hover:text-third md:dark:hover:bg-transparen duration-300">Portfolio</a>
-                        </li>
-                        <li>
-                            <a href="#" class="block py-2 pr-4 pl-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 dark:hover:bg-gray-700 hover:text-third md:dark:hover:bg-transparen duration-300">Contact</a>
-                        </li>
-                    </ul>
-                </div>
             </div>
-        </nav>
+            <div class="w-full sm:w-1/2 h-1/2 sm:h-full flex justify-center items-center">
+                <img src="./src/assets/images/icon/illustration/home.png" class="w-3/4 sm:w-[400px]" />
+            </div>
+        </div>
+    </div>
 
-        <!-- Home Page -->
-        <div class="bg-secondary z-0 w-full flex flex-col mx-auto px-4 h-[100vh] sm:h-[90vh] sm:mt-0 sm:flex-row sm:px4">
-            <div class="container mx-auto flex-col flex sm:flex-row h-full">
-                <div class="w-full sm:w-1/2 h-1/2 flex flex-col justify-end items-center mx-auto px-6 sm:h-full sm:justify-center sm:items-start z-0 ">
-                    <div class="flex">
-                        <h1 class="font-bold text-4xl  sm:text-5xl text-third">WEB</h1>
-                        <h1 class="font-bold text-4xl sm:text-5xl ml-[10px] text-primary">DESIGNER</h1>
-                    </div>
-                    <h1 class="font-bold text-4xl sm:text-5xl text-primary">AND DEVELOPER</h1>
-                    <div class="w-full sm:w-3/4 ">
-                        <h1 class="text-center sm:text-left mt-3 text-primary">Kembangkan bisnismu dengan membuat website
-                                                                                                                                        terbaik dengan jasa kami. Because a good website makes great business.
-                        </div>
+    <!-- Apa yang kami tawarkan -->
+    <div id="penawaran-section" class="bg-primary container mx-auto px-4 flex flex-col items-center">
+        <div class="w-full sm:w-[550px] text-center">
+            <h1 class=" mt-16 text-3xl font-bold mx-auto">Apa yang Kami Tawarkan</h1>
+            <p class="text-center mt-4">Sebagai web designer dan developer, kami mengutamakan hal yang mampu
+                mengembangkan bisnis kamu lebih jauh lagi.</p>
+        </div>
+        <div class=" container">
+            <div class="grid grid-cols-1 mt-16 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-6">
+                <!-- Kepercayaan -->
+                <div class="p-4 rounded-lg ">
+                    <svg class="w-20 mx-auto fill-secondary" viewbox="0 0 75 75" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M66.407 57.7187L61.2507 58.9375C60.0945 59.2187 59.1882 60.0937 58.9382 61.25L57.8445 65.8437C57.2507 68.3437 54.0632 69.125 52.407 67.1562L43.0632 56.4062C42.3132 55.5312 42.7195 54.1562 43.8445 53.875C49.3757 52.5312 54.3445 49.4375 58.0007 45.0312C58.5945 44.3125 59.657 44.2187 60.3132 44.875L67.2507 51.8125C69.6258 54.1875 68.782 57.1562 66.407 57.7187Z" />
+                        <path
+                            d="M8.43801 57.7187L13.5943 58.9375C14.7505 59.2187 15.6568 60.0937 15.9068 61.25L17.0005 65.8437C17.5943 68.3437 20.7818 69.125 22.438 67.1562L31.7818 56.4062C32.5318 55.5312 32.1255 54.1562 31.0005 53.875C25.4693 52.5312 20.5005 49.4375 16.8443 45.0312C16.2505 44.3125 15.188 44.2187 14.5318 44.875L7.59426 51.8125C5.21926 54.1875 6.06301 57.1562 8.43801 57.7187Z" />
+                        <path
+                            d="M37.5 6.25C25.4063 6.25 15.625 16.0313 15.625 28.125C15.625 32.6563 16.9688 36.8125 19.2813 40.2813C22.6563 45.2813 28 48.8125 34.2187 49.7188C35.2812 49.9063 36.375 50 37.5 50C38.625 50 39.7188 49.9063 40.7813 49.7188C47 48.8125 52.3437 45.2813 55.7187 40.2813C58.0312 36.8125 59.375 32.6563 59.375 28.125C59.375 16.0313 49.5937 6.25 37.5 6.25ZM47.0625 27.4375L44.4687 30.0313C44.0312 30.4688 43.7813 31.3125 43.9375 31.9375L44.6875 35.1563C45.2813 37.6875 43.9375 38.6875 41.6875 37.3438L38.5625 35.5C38 35.1563 37.0625 35.1563 36.5 35.5L33.375 37.3438C31.125 38.6563 29.7813 37.6875 30.375 35.1563L31.125 31.9375C31.25 31.3438 31.0312 30.4688 30.5937 30.0313L27.9375 27.4375C26.4062 25.9063 26.9062 24.375 29.0312 24.0313L32.375 23.4688C32.9375 23.375 33.5937 22.875 33.8437 22.375L35.6875 18.6875C36.6875 16.6875 38.3125 16.6875 39.3125 18.6875L41.1563 22.375C41.4063 22.875 42.0625 23.375 42.6562 23.4688L46 24.0313C48.0938 24.375 48.5938 25.9063 47.0625 27.4375Z" />
+                    </svg>
+                    <h1 class="text-secondary text-center text-xl font-bold my-2">
+                        Kepercayaan
                     </h1>
-                    <button type="button" class=" text-primary border-2 border-third bg-third white hover:bg-transparent hover:border-third hover:text-third focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded text-base px-5 py-2.5 text-center mt-4 dark:focus:ring-blue-800 duration-300 w-44">
-                        Mulai Konsultasi
-                    </button>
-                </div>
-                <div class="w-full sm:w-1/2 h-1/2 sm:h-full flex justify-center items-center">
-                    <img src="./src/assets/images/icon/illustration/home.png" class="w-3/4 sm:w-[400px]"/>
-                </div>
-            </div>
-        </div>
-
-        <!-- Apa yang kami tawarkan -->
-        <div class="bg-primary container mx-auto px-4 flex flex-col items-center">
-            <div class="w-full sm:w-[550px] text-center">
-                <h1 class=" mt-16 text-3xl font-bold mx-auto">Apa yang Kami Tawarkan</h1>
-                <p class="text-center mt-4">Sebagai web designer dan developer, kami mengutamakan hal yang mampu
-                                                                                                mengembangkan bisnis kamu lebih jauh lagi.</p>
-            </div>
-            <div class=" container">
-                <div
-                    class="grid grid-cols-1 mt-16 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-6">
-                    <!-- Kepercayaan -->
-                    <div class="p-4 rounded-lg ">
-                        <svg class="w-20 mx-auto fill-secondary" viewbox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M66.407 57.7187L61.2507 58.9375C60.0945 59.2187 59.1882 60.0937 58.9382 61.25L57.8445 65.8437C57.2507 68.3437 54.0632 69.125 52.407 67.1562L43.0632 56.4062C42.3132 55.5312 42.7195 54.1562 43.8445 53.875C49.3757 52.5312 54.3445 49.4375 58.0007 45.0312C58.5945 44.3125 59.657 44.2187 60.3132 44.875L67.2507 51.8125C69.6258 54.1875 68.782 57.1562 66.407 57.7187Z"/>
-                            <path d="M8.43801 57.7187L13.5943 58.9375C14.7505 59.2187 15.6568 60.0937 15.9068 61.25L17.0005 65.8437C17.5943 68.3437 20.7818 69.125 22.438 67.1562L31.7818 56.4062C32.5318 55.5312 32.1255 54.1562 31.0005 53.875C25.4693 52.5312 20.5005 49.4375 16.8443 45.0312C16.2505 44.3125 15.188 44.2187 14.5318 44.875L7.59426 51.8125C5.21926 54.1875 6.06301 57.1562 8.43801 57.7187Z"/>
-                            <path d="M37.5 6.25C25.4063 6.25 15.625 16.0313 15.625 28.125C15.625 32.6563 16.9688 36.8125 19.2813 40.2813C22.6563 45.2813 28 48.8125 34.2187 49.7188C35.2812 49.9063 36.375 50 37.5 50C38.625 50 39.7188 49.9063 40.7813 49.7188C47 48.8125 52.3437 45.2813 55.7187 40.2813C58.0312 36.8125 59.375 32.6563 59.375 28.125C59.375 16.0313 49.5937 6.25 37.5 6.25ZM47.0625 27.4375L44.4687 30.0313C44.0312 30.4688 43.7813 31.3125 43.9375 31.9375L44.6875 35.1563C45.2813 37.6875 43.9375 38.6875 41.6875 37.3438L38.5625 35.5C38 35.1563 37.0625 35.1563 36.5 35.5L33.375 37.3438C31.125 38.6563 29.7813 37.6875 30.375 35.1563L31.125 31.9375C31.25 31.3438 31.0312 30.4688 30.5937 30.0313L27.9375 27.4375C26.4062 25.9063 26.9062 24.375 29.0312 24.0313L32.375 23.4688C32.9375 23.375 33.5937 22.875 33.8437 22.375L35.6875 18.6875C36.6875 16.6875 38.3125 16.6875 39.3125 18.6875L41.1563 22.375C41.4063 22.875 42.0625 23.375 42.6562 23.4688L46 24.0313C48.0938 24.375 48.5938 25.9063 47.0625 27.4375Z"/>
-                        </svg>
-                        <h1 class="text-secondary text-center text-xl font-bold my-2">
-                            Kepercayaan
-                        </h1>
-                        <p class="text-center">
-                            Kami bertahan hingga saat ini dibangun dengan kepercayaan dari para klien dan kerjasama tim yang
-                                                                                                                                        solid.
-                        </p>
-                    </div>
-                    <!-- Solusi -->
-                    <div class="p-4 rounded-lg">
-                        <svg class="w-20 mx-auto fill-secondary" viewbox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M41.2187 18.75H21.2187C20.4062 18.75 19.625 18.7812 18.875 18.875C10.4687 19.5937 6.25 24.5625 6.25 33.7188V46.2188C6.25 58.7188 11.25 61.1875 21.2187 61.1875H22.4688C23.1563 61.1875 24.0625 61.6563 24.4687 62.1875L28.2187 67.1875C29.875 69.4063 32.5625 69.4063 34.2187 67.1875L37.9687 62.1875C38.4375 61.5625 39.1875 61.1875 39.9687 61.1875H41.2187C50.375 61.1875 55.3438 57 56.0625 48.5625C56.1563 47.8125 56.1875 47.0313 56.1875 46.2188V33.7188C56.1875 23.75 51.1875 18.75 41.2187 18.75ZM20.3125 43.75C18.5625 43.75 17.1875 42.3438 17.1875 40.625C17.1875 38.9063 18.5937 37.5 20.3125 37.5C22.0313 37.5 23.4375 38.9063 23.4375 40.625C23.4375 42.3438 22.0313 43.75 20.3125 43.75ZM31.2187 43.75C29.4687 43.75 28.0937 42.3438 28.0937 40.625C28.0937 38.9063 29.5 37.5 31.2187 37.5C32.9375 37.5 34.3437 38.9063 34.3437 40.625C34.3437 42.3438 32.9687 43.75 31.2187 43.75ZM42.1562 43.75C40.4062 43.75 39.0312 42.3438 39.0312 40.625C39.0312 38.9063 40.4375 37.5 42.1562 37.5C43.875 37.5 45.2812 38.9063 45.2812 40.625C45.2812 42.3438 43.875 43.75 42.1562 43.75Z"/>
-                            <path d="M68.6875 21.2187V33.7187C68.6875 39.9687 66.75 44.2187 62.875 46.5625C61.9375 47.125 60.8438 46.375 60.8438 45.2812L60.875 33.7187C60.875 21.2187 53.7188 14.0625 41.2188 14.0625L22.1875 14.0938C21.0937 14.0938 20.3438 13 20.9063 12.0625C23.25 8.1875 27.5 6.25 33.7188 6.25H53.7188C63.6875 6.25 68.6875 11.25 68.6875 21.2187Z"/>
-                        </svg>
-                        <h1 class="text-secondary text-center text-xl font-bold my-2">
-                            Solusi
-                        </h1>
-                        <p class="text-center">
-                            Kami bukan hanya penyedia jasa pembuatan website biasa, melainkan partner yang membuka semua
-                                                                                                                                        potensi online bagi bisnis kamu.
-                        </p>
-                    </div>
-                    <!-- Kesuksesan -->
-                    <div class="p-4 rounded-lg ">
-                        <svg class="w-20 mx-auto fill-secondary" viewbox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M50.5938 6.25H24.4062C13.0312 6.25 6.25 13.0312 6.25 24.4062V50.5625C6.25 61.9688 13.0312 68.75 24.4062 68.75H50.5625C61.9375 68.75 68.7188 61.9688 68.7188 50.5938V24.4062C68.75 13.0312 61.9688 6.25 50.5938 6.25ZM23.8438 56.7188C23.8438 58 22.7812 59.0625 21.5 59.0625C20.2188 59.0625 19.1562 58 19.1562 56.7188V50.25C19.1562 48.9688 20.2188 47.9062 21.5 47.9062C22.7812 47.9062 23.8438 48.9688 23.8438 50.25V56.7188ZM39.8438 56.7188C39.8438 58 38.7812 59.0625 37.5 59.0625C36.2188 59.0625 35.1562 58 35.1562 56.7188V43.75C35.1562 42.4688 36.2188 41.4062 37.5 41.4062C38.7812 41.4062 39.8438 42.4688 39.8438 43.75V56.7188ZM55.8438 56.7188C55.8438 58 54.7813 59.0625 53.5 59.0625C52.2188 59.0625 51.1563 58 51.1563 56.7188V37.2812C51.1563 36 52.2188 34.9375 53.5 34.9375C54.7813 34.9375 55.8438 36 55.8438 37.2812V56.7188ZM55.8438 27.4063C55.8438 28.6875 54.7813 29.75 53.5 29.75C52.2188 29.75 51.1563 28.6875 51.1563 27.4063V24.375C43.1875 32.5625 33.2188 38.3438 22.0625 41.125C21.875 41.1875 21.6875 41.1875 21.5 41.1875C20.4375 41.1875 19.5 40.4688 19.2188 39.4062C18.9062 38.1562 19.6562 36.875 20.9375 36.5625C31.4688 33.9375 40.8438 28.4062 48.2812 20.5938H44.375C43.0938 20.5938 42.0312 19.5312 42.0312 18.25C42.0312 16.9688 43.0938 15.9062 44.375 15.9062H53.5312C53.6562 15.9062 53.75 15.9688 53.875 15.9688C54.0312 16 54.1875 16 54.3438 16.0625C54.5 16.125 54.625 16.2187 54.7813 16.3125C54.875 16.375 54.9688 16.4062 55.0625 16.4688C55.0938 16.5 55.0938 16.5312 55.125 16.5312C55.25 16.6562 55.3438 16.7812 55.4375 16.9062C55.5312 17.0312 55.625 17.125 55.6562 17.25C55.7188 17.375 55.7188 17.5 55.75 17.6562C55.7812 17.8125 55.8438 17.9688 55.8438 18.1562C55.8438 18.1875 55.875 18.2188 55.875 18.25V27.4063H55.8438Z"/>
-                        </svg>
-                        <h1 class="text-secondary text-center text-xl font-bold my-2">
-                            Kesuksesan
-                        </h1>
-                        <p class="text-center">
-                            Kami bukan hanya penyedia jasa pembuatan website biasa, melainkan partner yang membuka semua
-                                                                                                                                        potensi online bagi bisnis kamu.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Carousel -->
-        <div class="bg- container mx-auto mt-16 sm:p-8  flex flex-col">
-            <div class="container bg-[#DEE1E6] mx-auto flex flex-col sm:flex-row sm:rounded-br-[300px]">
-                <div class="w-full sm:w-1/2 sm:pb-8">
-                    <div class="owl-carousel owl-theme">
-                        <div class="item">
-                            <img src="./src/assets/images/portoflio/pf1.jpg" alt="" srcset="" class="w-[100px]">
-                        </div>
-                        <div class="item">
-                            <img src="./src/assets/images/portoflio/pf2.jpg" alt="" srcset="">
-                        </div>
-                        <div class="item">
-                            <img src="./src/assets/images/portoflio/pf3.jpg" alt="" srcset="">
-                        </div>
-                        <div class="item">
-                            <img src="./src/assets/images/portoflio/pf4.jpg" alt="" srcset="">
-                        </div>
-                    </div>
-                </div>
-                <div class="p-8 sm:pr-16 w-full sm:w-1/2 flex flex-col ">
-                    <h1 class="text-3xl font-bold text- mt-4 sm:mt-0">Jasa Design Website dan Development Terbaik.</h1>
-                    <p class="mt-4">Fokus untuk mengembangkan bisnismu dan kami akan membantu kamu untuk memilki
-                                                                                                                    sebuah website terbaik & berkualitas dengan harga ter-murah, di buat oleh para profesional yang sudah
-                                                                                                                    melayani lebih dari 5 tahun di jasa pembutan website, jadi kami sangat mengerti desain website yang di
-                                                                                                                    butuhkan untuk bisnismu.
+                    <p class="text-center">
+                        Kami bertahan hingga saat ini dibangun dengan kepercayaan dari para klien dan kerjasama tim yang
+                        solid.
                     </p>
-                    <p class="primary mt-4">Dengan proses order yang mudah, kami akan menyelesaikan semuanya dalam waktu 2
-                                                                                                                    hari saja.</p>
+                </div>
+                <!-- Solusi -->
+                <div class="p-4 rounded-lg">
+                    <svg class="w-20 mx-auto fill-secondary" viewbox="0 0 75 75" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M41.2187 18.75H21.2187C20.4062 18.75 19.625 18.7812 18.875 18.875C10.4687 19.5937 6.25 24.5625 6.25 33.7188V46.2188C6.25 58.7188 11.25 61.1875 21.2187 61.1875H22.4688C23.1563 61.1875 24.0625 61.6563 24.4687 62.1875L28.2187 67.1875C29.875 69.4063 32.5625 69.4063 34.2187 67.1875L37.9687 62.1875C38.4375 61.5625 39.1875 61.1875 39.9687 61.1875H41.2187C50.375 61.1875 55.3438 57 56.0625 48.5625C56.1563 47.8125 56.1875 47.0313 56.1875 46.2188V33.7188C56.1875 23.75 51.1875 18.75 41.2187 18.75ZM20.3125 43.75C18.5625 43.75 17.1875 42.3438 17.1875 40.625C17.1875 38.9063 18.5937 37.5 20.3125 37.5C22.0313 37.5 23.4375 38.9063 23.4375 40.625C23.4375 42.3438 22.0313 43.75 20.3125 43.75ZM31.2187 43.75C29.4687 43.75 28.0937 42.3438 28.0937 40.625C28.0937 38.9063 29.5 37.5 31.2187 37.5C32.9375 37.5 34.3437 38.9063 34.3437 40.625C34.3437 42.3438 32.9687 43.75 31.2187 43.75ZM42.1562 43.75C40.4062 43.75 39.0312 42.3438 39.0312 40.625C39.0312 38.9063 40.4375 37.5 42.1562 37.5C43.875 37.5 45.2812 38.9063 45.2812 40.625C45.2812 42.3438 43.875 43.75 42.1562 43.75Z" />
+                        <path
+                            d="M68.6875 21.2187V33.7187C68.6875 39.9687 66.75 44.2187 62.875 46.5625C61.9375 47.125 60.8438 46.375 60.8438 45.2812L60.875 33.7187C60.875 21.2187 53.7188 14.0625 41.2188 14.0625L22.1875 14.0938C21.0937 14.0938 20.3438 13 20.9063 12.0625C23.25 8.1875 27.5 6.25 33.7188 6.25H53.7188C63.6875 6.25 68.6875 11.25 68.6875 21.2187Z" />
+                    </svg>
+                    <h1 class="text-secondary text-center text-xl font-bold my-2">
+                        Solusi
+                    </h1>
+                    <p class="text-center">
+                        Kami bukan hanya penyedia jasa pembuatan website biasa, melainkan partner yang membuka semua
+                        potensi online bagi bisnis kamu.
+                    </p>
+                </div>
+                <!-- Kesuksesan -->
+                <div class="p-4 rounded-lg ">
+                    <svg class="w-20 mx-auto fill-secondary" viewbox="0 0 75 75" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M50.5938 6.25H24.4062C13.0312 6.25 6.25 13.0312 6.25 24.4062V50.5625C6.25 61.9688 13.0312 68.75 24.4062 68.75H50.5625C61.9375 68.75 68.7188 61.9688 68.7188 50.5938V24.4062C68.75 13.0312 61.9688 6.25 50.5938 6.25ZM23.8438 56.7188C23.8438 58 22.7812 59.0625 21.5 59.0625C20.2188 59.0625 19.1562 58 19.1562 56.7188V50.25C19.1562 48.9688 20.2188 47.9062 21.5 47.9062C22.7812 47.9062 23.8438 48.9688 23.8438 50.25V56.7188ZM39.8438 56.7188C39.8438 58 38.7812 59.0625 37.5 59.0625C36.2188 59.0625 35.1562 58 35.1562 56.7188V43.75C35.1562 42.4688 36.2188 41.4062 37.5 41.4062C38.7812 41.4062 39.8438 42.4688 39.8438 43.75V56.7188ZM55.8438 56.7188C55.8438 58 54.7813 59.0625 53.5 59.0625C52.2188 59.0625 51.1563 58 51.1563 56.7188V37.2812C51.1563 36 52.2188 34.9375 53.5 34.9375C54.7813 34.9375 55.8438 36 55.8438 37.2812V56.7188ZM55.8438 27.4063C55.8438 28.6875 54.7813 29.75 53.5 29.75C52.2188 29.75 51.1563 28.6875 51.1563 27.4063V24.375C43.1875 32.5625 33.2188 38.3438 22.0625 41.125C21.875 41.1875 21.6875 41.1875 21.5 41.1875C20.4375 41.1875 19.5 40.4688 19.2188 39.4062C18.9062 38.1562 19.6562 36.875 20.9375 36.5625C31.4688 33.9375 40.8438 28.4062 48.2812 20.5938H44.375C43.0938 20.5938 42.0312 19.5312 42.0312 18.25C42.0312 16.9688 43.0938 15.9062 44.375 15.9062H53.5312C53.6562 15.9062 53.75 15.9688 53.875 15.9688C54.0312 16 54.1875 16 54.3438 16.0625C54.5 16.125 54.625 16.2187 54.7813 16.3125C54.875 16.375 54.9688 16.4062 55.0625 16.4688C55.0938 16.5 55.0938 16.5312 55.125 16.5312C55.25 16.6562 55.3438 16.7812 55.4375 16.9062C55.5312 17.0312 55.625 17.125 55.6562 17.25C55.7188 17.375 55.7188 17.5 55.75 17.6562C55.7812 17.8125 55.8438 17.9688 55.8438 18.1562C55.8438 18.1875 55.875 18.2188 55.875 18.25V27.4063H55.8438Z" />
+                    </svg>
+                    <h1 class="text-secondary text-center text-xl font-bold my-2">
+                        Kesuksesan
+                    </h1>
+                    <p class="text-center">
+                        Kami bukan hanya penyedia jasa pembuatan website biasa, melainkan partner yang membuka semua
+                        potensi online bagi bisnis kamu.
+                    </p>
                 </div>
             </div>
         </div>
-        <!-- Kenapa Eunoia -->
-        <div class=" bg-primary container mx-auto px-4 flex flex-col items-center">
-            <div class="w-full sm:w-[550px] text-center">
-                <h1 class=" mt-16 text-3xl font-bold mx-auto">Kenapa Eunoia</h1>
-                <p class="text-center mt-4">Begitu banyak sebab kenapa kamu harus memilih kami sebagai web designer dan
-                                                                                                developer kamu.</p>
-            </div>
-            <div class="container">
-                <div
-                    class=" grid grid-cols-1 mt-16 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-6">
-                    <!--Pengerjaan Cepat-->
-                    <div class="p-4 rounded-lg ">
-                        <svg class="w-20 mx-auto fill-secondary" viewbox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M48.117 58.4098C48.5005 58.2121 48.9576 58.5435 48.8715 58.9663L48.4062 61.25C46.875 67.1875 43.4375 68.75 39.2187 68.75H35.8125C31.5937 68.75 28.125 67.1875 26.625 61.2187L26.1793 58.9479C26.0968 58.5277 26.549 58.2003 26.9303 58.3953C30.1833 60.0587 33.777 60.9375 37.5 60.9375C41.2458 60.9375 44.8628 60.0871 48.117 58.4098Z"/>
-                            <path d="M48.8939 16.0823C48.9827 16.507 48.5221 16.8411 48.1374 16.6405C44.9608 14.9836 41.3455 14.0625 37.5 14.0625C33.678 14.0625 30.0868 14.9859 26.9123 16.6235C26.5293 16.8211 26.0732 16.49 26.1593 16.0676L26.625 13.7812C28.125 7.8125 31.5937 6.25 35.8125 6.25H39.2188C43.4375 6.25 46.875 7.8125 48.4062 13.75L48.8939 16.0823Z"/>
-                            <path d="M37.5 17.1875C26.2813 17.1875 17.1875 26.2813 17.1875 37.5C17.1875 44.0625 20.2812 49.875 25.0937 53.5937H25.125C28.5625 56.25 32.8437 57.8125 37.5 57.8125C42.2187 57.8125 46.5312 56.2187 49.9687 53.5312H50C54.75 49.8125 57.8125 44 57.8125 37.5C57.8125 26.2813 48.7187 17.1875 37.5 17.1875ZM43.5313 44.9375C43.0625 45.4063 42.4687 45.625 41.875 45.625C41.2812 45.625 40.6875 45.4063 40.2187 44.9375L35.8438 40.5625C35.4063 40.125 35.1562 39.5312 35.1562 38.9062V30.1875C35.1562 28.9062 36.2188 27.8437 37.5 27.8437C38.7812 27.8437 39.8438 28.9062 39.8438 30.1875V37.9375L43.5313 41.625C44.4375 42.5312 44.4375 44.0313 43.5313 44.9375Z"/>
-                        </svg>
-                        <h1 class=" text-center text-xl font-bold my-2">
-                            Pengerjaan Cepat
-                        </h1>
-                        <p class="text-center">
-                            Tim kami akan bekerja dengan cepat sesuai paket yang kamu pilih.
-                                                                                                                                        Kami menjamin pengerjaan tanpa melewati tenggat waktu.
-                        </p>
+    </div>
+    <!-- Carousel -->
+    <div class="bg- container mx-auto pt-32  flex flex-col">
+        <div class="container bg-[#DEE1E6] mx-auto flex flex-col sm:flex-row sm:rounded-br-[300px]">
+            <div class="w-full sm:w-1/2 sm:pb-8">
+                <div class="owl-carousel owl-theme">
+                    <div class="item">
+                        <img src="./src/assets/images/portoflio/pf1.jpg" alt="" srcset="" class="w-[100px]">
                     </div>
-                    <!-- Profesional-->
-                    <div class="p-4 rounded-lg ">
-                        <svg class="w-20 mx-auto fill-secondary" viewbox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M62.5 18.75V19.5H46.4687C37.1875 19.5 32.875 23.8125 32.875 33.0938V49.0625H30.4688V60.1562H32.875V64.8438H15.4687C14.1875 64.8438 13.125 63.7812 13.125 62.5C13.125 61.2188 14.1875 60.1562 15.4687 60.1562H25.7812V49.0625H18.75C8.96875 49.0625 6.34375 46.6562 6.25 37.1875V18.75C6.25 8.75 8.75 6.25 18.75 6.25H50C60 6.25 62.5 8.75 62.5 18.75Z"/>
-                            <path d="M62.5 24.3438C61.7188 24.25 60.8125 24.1875 59.8437 24.1875H46.4687C39.7812 24.1875 37.5625 26.4063 37.5625 33.0938V60.1563C37.5938 62.0938 37.8125 63.625 38.2812 64.8438C39.375 67.6875 41.8437 68.75 46.4687 68.75H59.8437C66.5312 68.75 68.75 66.5312 68.75 59.8437V33.0938C68.75 27.375 67.125 24.9375 62.5 24.3438ZM53.1563 31.5313C55.875 31.5313 58.0625 33.7188 58.0625 36.4375C58.0625 39.1563 55.875 41.3437 53.1563 41.3437C50.4375 41.3437 48.25 39.1563 48.25 36.4375C48.25 33.7188 50.4375 31.5313 53.1563 31.5313ZM53.1563 59.8437C49.4688 59.8437 46.4687 56.8438 46.4687 53.1563C46.4687 51.625 47 50.1875 47.875 49.0625C49.0937 47.5 51 46.4688 53.1563 46.4688C54.8438 46.4688 56.375 47.0938 57.5312 48.0938C58.9375 49.3438 59.8437 51.1563 59.8437 53.1563C59.8437 56.8438 56.8438 59.8437 53.1563 59.8437Z"/>
-                            <path d="M62.5 24.3438C61.7188 24.25 60.8125 24.1875 59.8437 24.1875H46.4687C39.7812 24.1875 37.5625 26.4063 37.5625 33.0938V60.1563C37.5938 62.0938 37.8125 63.625 38.2812 64.8438C39.375 67.6875 41.8437 68.75 46.4687 68.75H59.8437C66.5312 68.75 68.75 66.5312 68.75 59.8437V33.0938C68.75 27.375 67.125 24.9375 62.5 24.3438ZM53.1563 31.5313C55.875 31.5313 58.0625 33.7188 58.0625 36.4375C58.0625 39.1563 55.875 41.3437 53.1563 41.3437C50.4375 41.3437 48.25 39.1563 48.25 36.4375C48.25 33.7188 50.4375 31.5313 53.1563 31.5313ZM53.1563 59.8437C49.4688 59.8437 46.4687 56.8438 46.4687 53.1563C46.4687 51.625 47 50.1875 47.875 49.0625C49.0937 47.5 51 46.4688 53.1563 46.4688C54.8438 46.4688 56.375 47.0938 57.5312 48.0938C58.9375 49.3438 59.8437 51.1563 59.8437 53.1563C59.8437 56.8438 56.8438 59.8437 53.1563 59.8437Z"/>
-                        </svg>
-                        <h1 class="text-secondary text-center text-xl font-bold my-2">
-                            Profesional
-                        </h1>
-                        <p class="text-center">
-                            Walaupun kami membuat websitemu dengan cepat bukan berarti asal jadi, website kamu akan
-                                                                                                                                        dikerjakan dengan teliti dan tidak mengabikan unsur penting.
-                        </p>
+                    <div class="item">
+                        <img src="./src/assets/images/portoflio/pf2.jpg" alt="" srcset="">
                     </div>
-                    <!--Pembayaran Mudah-->
-                    <div class="p-4 rounded-lg ">
-                        <svg class="w-20 mx-auto fill-secondary" viewbox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M37.3125 6.90626L29.7813 24.4375H22.25C21 24.4375 19.7813 24.5313 18.5938 24.7813L21.7188 17.2813L21.8438 17L22.0313 16.5C22.125 16.2813 22.1875 16.0938 22.2813 15.9375C25.9063 7.53126 29.9688 4.90626 37.3125 6.90626Z"/>
-                            <path d="M58.5312 25.2812L58.4687 25.25C56.5937 24.7188 54.6875 24.4375 52.75 24.4375H33.1875L40.2188 8.09375L40.3125 7.875C40.75 8.03125 41.2188 8.25 41.6875 8.40625L48.5938 11.3125C52.4375 12.9062 55.125 14.5625 56.7812 16.5625C57.0625 16.9375 57.3125 17.2812 57.5625 17.6875C57.8438 18.125 58.0625 18.5625 58.1875 19.0313C58.3125 19.3125 58.4062 19.5625 58.4687 19.8438C58.9375 21.4375 58.9687 23.25 58.5312 25.2812Z"/>
-                            <path d="M39.125 55.1875H39.9063C40.8438 55.1875 41.625 54.3437 41.625 53.3125C41.625 52 41.25 51.8125 40.4375 51.5L39.125 51.0312V55.1875Z"/>
-                            <path d="M57.1563 29.75C55.75 29.3438 54.2812 29.125 52.75 29.125H22.25C20.125 29.125 18.125 29.5313 16.25 30.3438C10.8125 32.6875 7 38.0938 7 44.375V50.4688C7 51.2188 7.0625 51.9375 7.15625 52.6875C7.84375 62.625 13.1562 67.9375 23.0937 68.5938C23.8125 68.6875 24.5313 68.75 25.3125 68.75H49.6875C61.25 68.75 67.3438 63.25 67.9375 52.3125C67.9688 51.7188 68 51.0938 68 50.4688V44.375C68 37.4688 63.4063 31.6563 57.1563 29.75ZM41.5 48.4375C42.9375 48.9375 44.875 50 44.875 53.3125C44.875 56.1562 42.6563 58.4375 39.9063 58.4375H39.125V59.125C39.125 60.0313 38.4062 60.75 37.5 60.75C36.5938 60.75 35.875 60.0313 35.875 59.125V58.4375H35.5938C32.5938 58.4375 30.125 55.9062 30.125 52.7812C30.125 51.875 30.8438 51.1563 31.75 51.1563C32.6562 51.1563 33.375 51.875 33.375 52.7812C33.375 54.0937 34.375 55.1875 35.5938 55.1875H35.875V49.9063L33.5 49.0625C32.0625 48.5625 30.125 47.5 30.125 44.1875C30.125 41.3438 32.3438 39.0625 35.0938 39.0625H35.875V38.375C35.875 37.4688 36.5938 36.75 37.5 36.75C38.4062 36.75 39.125 37.4688 39.125 38.375V39.0625H39.4062C42.4062 39.0625 44.875 41.5938 44.875 44.7188C44.875 45.625 44.1562 46.3438 43.25 46.3438C42.3438 46.3438 41.625 45.625 41.625 44.7188C41.625 43.4063 40.625 42.3125 39.4062 42.3125H39.125V47.5938L41.5 48.4375Z"/>
-                            <path d="M33.375 44.1875C33.375 45.5 33.75 45.6875 34.5625 46L35.875 46.4688V42.3125H35.0937C34.125 42.3125 33.375 43.1563 33.375 44.1875Z"/>
-                        </svg>
-                        <h1 class="text-secondary text-center text-xl font-bold my-2">
-                            Pembayaran Mudah
-                        </h1>
-                        <p class="text-center">
-                            Kamu bisa melakukan order via whatsapp ataupun form dan kamu akan mendaptkan invoice detail
-                                                                                                                                        pembelian jasa pembuata website dengan sistem otomatis.
-                        </p>
+                    <div class="item">
+                        <img src="./src/assets/images/portoflio/pf3.jpg" alt="" srcset="">
                     </div>
-                    <!--Revisi Tanpa Batas-->
-                    <div class="p-4 rounded-lg ">
-                        <svg class="w-20 mx-auto fill-secondary" viewbox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M65.625 68.75H9.375C8.09375 68.75 7.03125 67.6875 7.03125 66.4062C7.03125 65.125 8.09375 64.0625 9.375 64.0625H65.625C66.9062 64.0625 67.9688 65.125 67.9688 66.4062C67.9688 67.6875 66.9062 68.75 65.625 68.75Z"/>
-                            <path d="M59.4375 10.875C53.375 4.8125 47.4375 4.65625 41.2187 10.875L37.4375 14.6563C37.125 14.9688 37 15.4688 37.125 15.9063C39.5 24.1875 46.125 30.8125 54.4062 33.1875C54.5312 33.2188 54.6562 33.25 54.7812 33.25C55.125 33.25 55.4375 33.125 55.6875 32.875L59.4375 29.0938C62.5312 26.0313 64.0312 23.0625 64.0312 20.0625C64.0625 16.9688 62.5625 13.9688 59.4375 10.875Z"/>
-                            <path d="M48.7812 36.0312C47.875 35.5937 47 35.1562 46.1562 34.6562C45.4687 34.25 44.8125 33.8125 44.1562 33.3437C43.625 33 43 32.5 42.4062 32C42.3437 31.9687 42.125 31.7812 41.875 31.5312C40.8437 30.6562 39.6875 29.5313 38.6562 28.2812C38.5625 28.2188 38.4062 28 38.1875 27.7187C37.875 27.3437 37.3437 26.7187 36.875 26C36.5 25.5312 36.0625 24.8437 35.6562 24.1562C35.1562 23.3125 34.7187 22.4687 34.2812 21.5937C33.9675 20.9214 33.7019 20.2651 33.4616 19.6365C33.3314 19.296 32.8937 19.2 32.636 19.4578L13.5625 38.5312C13.1562 38.9375 12.7812 39.7187 12.6875 40.25L11 52.2187C10.6875 54.3437 11.2812 56.3437 12.5937 57.6875C13.7187 58.7812 15.2812 59.375 16.9687 59.375C17.3437 59.375 17.7187 59.3437 18.0937 59.2812L30.0937 57.5938C30.6562 57.5 31.4375 57.125 31.8125 56.7187L50.8788 37.6524C51.1383 37.3929 51.0393 36.9507 50.6966 36.8192C50.0756 36.5809 49.4525 36.3221 48.7812 36.0312Z"/>
-                        </svg>
-                        <h1 class=" text-center text-xl font-bold my-2">
-                            Revisi Tanpa Batas
-                        </h1>
-                        <p class="text-center">
-                            Dengan semangat penuh kami siap memenuhi permintaan kamu. Kami menawarkan jumlah revisi yang tak
-                                                                                                                                        terbatas hingga project telah selesai.
-                        </p>
-                    </div>
-                    <!--Sumber File Lengkap-->
-                    <div class="p-4 rounded-lg ">
-                        <svg class="w-20 mx-auto fill-secondary" viewbox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M65.8125 36.9375L65.3125 36.25C64.4375 35.1875 63.4062 34.3437 62.2187 33.7187C60.625 32.8125 58.8125 32.3438 56.9375 32.3438H18.0312C16.1562 32.3438 14.375 32.8125 12.75 33.7187C11.5312 34.375 10.4375 35.2812 9.53125 36.4062C7.75 38.6875 6.90625 41.5 7.1875 44.3125L8.34375 58.9062C8.75 63.3125 9.28125 68.75 19.1875 68.75H55.8125C65.7188 68.75 66.2187 63.3125 66.6562 58.875L67.8125 44.3437C68.0938 41.7187 67.4062 39.0937 65.8125 36.9375ZM44.9688 54.1875H30C28.7813 54.1875 27.8125 53.1875 27.8125 52C27.8125 50.8125 28.7813 49.8125 30 49.8125H44.9688C46.1875 49.8125 47.1563 50.8125 47.1563 52C47.1563 53.2187 46.1875 54.1875 44.9688 54.1875Z"/>
-                            <path d="M64.379 28.6964C64.3952 29.0807 63.9835 29.3338 63.6363 29.1682C61.5664 28.1811 59.3293 27.6875 56.9688 27.6875H18.0312C15.6698 27.6875 13.3578 28.2062 11.3147 29.1776C10.9714 29.3409 10.5625 29.0976 10.5625 28.7174V20.8125C10.5625 9.65625 13.9687 6.25 25.125 6.25H28.8125C33.2812 6.25 34.6875 7.6875 36.5 10.0312L40.25 15.0312C41.0312 16.0938 41.0625 16.1562 42.4375 16.1562H49.875C60.3455 16.1562 63.9779 19.1627 64.379 28.6964Z"/>
-                        </svg>
-                        <h1 class="text-secondary text-center text-xl font-bold my-2">
-                            Terima Jadi
-                        </h1>
-                        <p class="text-center">
-                            Semua paket yang kami tawarkan adalah terima jadi dan siap pakai, fokuslah ke bisnis Anda, semua
-                                                                                                                                        masalah teknis biarkan kami yang tangani.
-                        </p>
-                    </div>
-                    <!--Layanan Support-->
-                    <div class="p-4 rounded-lg ">
-                        <svg class="w-20 mx-auto fill-secondary" viewbox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M41.2187 18.75H21.2187C20.4062 18.75 19.625 18.7812 18.875 18.875C10.4687 19.5937 6.25 24.5625 6.25 33.7188V46.2188C6.25 58.7188 11.25 61.1875 21.2187 61.1875H22.4688C23.1563 61.1875 24.0625 61.6563 24.4687 62.1875L28.2187 67.1875C29.875 69.4063 32.5625 69.4063 34.2187 67.1875L37.9687 62.1875C38.4375 61.5625 39.1875 61.1875 39.9687 61.1875H41.2187C50.375 61.1875 55.3438 57 56.0625 48.5625C56.1563 47.8125 56.1875 47.0313 56.1875 46.2188V33.7188C56.1875 23.75 51.1875 18.75 41.2187 18.75ZM20.3125 43.75C18.5625 43.75 17.1875 42.3438 17.1875 40.625C17.1875 38.9063 18.5937 37.5 20.3125 37.5C22.0313 37.5 23.4375 38.9063 23.4375 40.625C23.4375 42.3438 22.0313 43.75 20.3125 43.75ZM31.2187 43.75C29.4687 43.75 28.0937 42.3438 28.0937 40.625C28.0937 38.9063 29.5 37.5 31.2187 37.5C32.9375 37.5 34.3437 38.9063 34.3437 40.625C34.3437 42.3438 32.9687 43.75 31.2187 43.75ZM42.1562 43.75C40.4062 43.75 39.0312 42.3438 39.0312 40.625C39.0312 38.9063 40.4375 37.5 42.1562 37.5C43.875 37.5 45.2812 38.9063 45.2812 40.625C45.2812 42.3438 43.875 43.75 42.1562 43.75Z"/>
-                            <path d="M68.6875 21.2187V33.7187C68.6875 39.9687 66.75 44.2187 62.875 46.5625C61.9375 47.125 60.8438 46.375 60.8438 45.2812L60.875 33.7187C60.875 21.2187 53.7188 14.0625 41.2188 14.0625L22.1875 14.0938C21.0937 14.0938 20.3438 13 20.9063 12.0625C23.25 8.1875 27.5 6.25 33.7188 6.25H53.7188C63.6875 6.25 68.6875 11.25 68.6875 21.2187Z"/>
-                        </svg>
-                        <h1 class="text-secondary text-center text-xl font-bold my-2">
-                            Layanan Support
-                        </h1>
-                        <p class="text-center">
-                            Jika ada keperluan atau kendala di website selama kamu masih menggunakan jasa kami, hubungi kami
-                                                                                                                                        kapanpun yang kamu mau.
-                        </p>
+                    <div class="item">
+                        <img src="./src/assets/images/portoflio/pf4.jpg" alt="" srcset="">
                     </div>
                 </div>
             </div>
-        </div>
-
-        <!-- Tentang Kami -->
-        <div id="about-section" class="bg-secondar container mt-32 mx-auto flex flex-col sm:flex-row h-full text-primary sm:rounded-br-[200px]">
-            <div class="w-full sm:w-1/2 px-8 pt-8 sm:pt-0">
-                <img src="./src/assets/images/pictures/tentangkamiL.jpg" class="w-full mx-auto">
-            </div>
-            <div class="w-full sm:w-1/2 px-8 pt-8 sm:pt-0 text-secondary">
-                <h1 class="text-3xl font-bold ">Tentang Kami</h1>
-                <p class="mt-4">Eunoia adalah sebuah Web Designer sekaligus Web Developer yang berbasis di Surabaya,
-                                                                                                    Indonesia. Beroperasi sejak 2017, sudah membantu hingga 150+ client di seluruh Indonesia. Kami
-                                                                                                    menyediakan jasa pembuatan web mulai dari Company Profile, Toko Online, Web Travel, Web Booking, Web
-                                                                                                    Sales, hingga Web Personal.</p>
-                <p class="mt-4">Visi kami untuk berkontribusi dalam membangun dan mengembangkan usaha UMKM baik perseorangan, CV maupun PT pada
-                                                            era Digital Marketing melalui jasa desain web dan developmentnya.</p>
-                <p class="mt-4">Misi kami untuk berkontribusi dalam membangun dan mengembangkan usaha UMKM baik perseorangan, CV maupun PT pada
-                                                            era Digital Marketing melalui jasa desain web dan developmentnya.</p>
+            <div class="p-8 sm:pr-16 w-full sm:w-1/2 flex flex-col ">
+                <h1 class="text-3xl font-bold text- mt-4 sm:mt-0">Jasa Design Website dan Development Terbaik.</h1>
+                <p class="mt-4">Fokus untuk mengembangkan bisnismu dan kami akan membantu kamu untuk memilki
+                    sebuah website terbaik & berkualitas dengan harga ter-murah, di buat oleh para profesional yang
+                    sudah
+                    melayani lebih dari 5 tahun di jasa pembutan website, jadi kami sangat mengerti desain website yang
+                    di
+                    butuhkan untuk bisnismu.
+                </p>
+                <p class="primary mt-4">Dengan proses order yang mudah, kami akan menyelesaikan semuanya dalam waktu 2
+                    hari saja.</p>
             </div>
         </div>
-    </body>
-</html></div><div class="container mx-auto mt-16">
-<div
-    class="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-6">
-    <!-- Siapa Kami -->
-    <div class="p-4 rounded-lg ">
-        <svg class="w-20 mx-auto fill-secondary" viewbox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M66.407 57.7187L61.2507 58.9375C60.0945 59.2187 59.1882 60.0937 58.9382 61.25L57.8445 65.8437C57.2507 68.3437 54.0632 69.125 52.407 67.1562L43.0632 56.4062C42.3132 55.5312 42.7195 54.1562 43.8445 53.875C49.3757 52.5312 54.3445 49.4375 58.0007 45.0312C58.5945 44.3125 59.657 44.2187 60.3132 44.875L67.2507 51.8125C69.6258 54.1875 68.782 57.1562 66.407 57.7187Z"/>
-            <path d="M8.43801 57.7187L13.5943 58.9375C14.7505 59.2187 15.6568 60.0937 15.9068 61.25L17.0005 65.8437C17.5943 68.3437 20.7818 69.125 22.438 67.1562L31.7818 56.4062C32.5318 55.5312 32.1255 54.1562 31.0005 53.875C25.4693 52.5312 20.5005 49.4375 16.8443 45.0312C16.2505 44.3125 15.188 44.2187 14.5318 44.875L7.59426 51.8125C5.21926 54.1875 6.06301 57.1562 8.43801 57.7187Z"/>
-            <path d="M37.5 6.25C25.4063 6.25 15.625 16.0313 15.625 28.125C15.625 32.6563 16.9688 36.8125 19.2813 40.2813C22.6563 45.2813 28 48.8125 34.2187 49.7188C35.2812 49.9063 36.375 50 37.5 50C38.625 50 39.7188 49.9063 40.7813 49.7188C47 48.8125 52.3437 45.2813 55.7187 40.2813C58.0312 36.8125 59.375 32.6563 59.375 28.125C59.375 16.0313 49.5937 6.25 37.5 6.25ZM47.0625 27.4375L44.4687 30.0313C44.0312 30.4688 43.7813 31.3125 43.9375 31.9375L44.6875 35.1563C45.2813 37.6875 43.9375 38.6875 41.6875 37.3438L38.5625 35.5C38 35.1563 37.0625 35.1563 36.5 35.5L33.375 37.3438C31.125 38.6563 29.7813 37.6875 30.375 35.1563L31.125 31.9375C31.25 31.3438 31.0312 30.4688 30.5937 30.0313L27.9375 27.4375C26.4062 25.9063 26.9062 24.375 29.0312 24.0313L32.375 23.4688C32.9375 23.375 33.5937 22.875 33.8437 22.375L35.6875 18.6875C36.6875 16.6875 38.3125 16.6875 39.3125 18.6875L41.1563 22.375C41.4063 22.875 42.0625 23.375 42.6562 23.4688L46 24.0313C48.0938 24.375 48.5938 25.9063 47.0625 27.4375Z"/>
-        </svg>
-        <h1 class="text-center text-xl font-bold my-2">
-            Siapa Kami
-        </h1>
-        <p class="text-center">
-            Kami adalah web desainer dan developer yang berbasis di Surabaya, Indonesia. Kami berdiri pada
-                                                                                tahun 2020 dimana awal mula tim ini berasal dari komunitas coders webbased.
-        </p>
     </div>
-    <!-- Visi -->
-    <div class="p-4 rounded-lg">
-        <svg class="w-20 mx-auto fill-secondary" viewbox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M41.2187 18.75H21.2187C20.4062 18.75 19.625 18.7812 18.875 18.875C10.4687 19.5937 6.25 24.5625 6.25 33.7188V46.2188C6.25 58.7188 11.25 61.1875 21.2187 61.1875H22.4688C23.1563 61.1875 24.0625 61.6563 24.4687 62.1875L28.2187 67.1875C29.875 69.4063 32.5625 69.4063 34.2187 67.1875L37.9687 62.1875C38.4375 61.5625 39.1875 61.1875 39.9687 61.1875H41.2187C50.375 61.1875 55.3438 57 56.0625 48.5625C56.1563 47.8125 56.1875 47.0313 56.1875 46.2188V33.7188C56.1875 23.75 51.1875 18.75 41.2187 18.75ZM20.3125 43.75C18.5625 43.75 17.1875 42.3438 17.1875 40.625C17.1875 38.9063 18.5937 37.5 20.3125 37.5C22.0313 37.5 23.4375 38.9063 23.4375 40.625C23.4375 42.3438 22.0313 43.75 20.3125 43.75ZM31.2187 43.75C29.4687 43.75 28.0937 42.3438 28.0937 40.625C28.0937 38.9063 29.5 37.5 31.2187 37.5C32.9375 37.5 34.3437 38.9063 34.3437 40.625C34.3437 42.3438 32.9687 43.75 31.2187 43.75ZM42.1562 43.75C40.4062 43.75 39.0312 42.3438 39.0312 40.625C39.0312 38.9063 40.4375 37.5 42.1562 37.5C43.875 37.5 45.2812 38.9063 45.2812 40.625C45.2812 42.3438 43.875 43.75 42.1562 43.75Z"/>
-            <path d="M68.6875 21.2187V33.7187C68.6875 39.9687 66.75 44.2187 62.875 46.5625C61.9375 47.125 60.8438 46.375 60.8438 45.2812L60.875 33.7187C60.875 21.2187 53.7188 14.0625 41.2188 14.0625L22.1875 14.0938C21.0937 14.0938 20.3438 13 20.9063 12.0625C23.25 8.1875 27.5 6.25 33.7188 6.25H53.7188C63.6875 6.25 68.6875 11.25 68.6875 21.2187Z"/>
-        </svg>
-        <h1 class="text-center text-xl font-bold my-2">
-            Visi
-        </h1>
-        <p class="text-center">
-            Berkontribusi dalam membangun dan mengembangkan usaha UMKM baik perseorangan, CV maupun PT pada
-                                                                                era Digital Marketing melalui jasa desain web dan developmentnya.
-        </p>
-    </div>
-    <!-- Misi -->
-    <div class="p-4 rounded-lg ">
-        <svg class="w-20 mx-auto fill-secondary" viewbox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M50.5938 6.25H24.4062C13.0312 6.25 6.25 13.0312 6.25 24.4062V50.5625C6.25 61.9688 13.0312 68.75 24.4062 68.75H50.5625C61.9375 68.75 68.7188 61.9688 68.7188 50.5938V24.4062C68.75 13.0312 61.9688 6.25 50.5938 6.25ZM23.8438 56.7188C23.8438 58 22.7812 59.0625 21.5 59.0625C20.2188 59.0625 19.1562 58 19.1562 56.7188V50.25C19.1562 48.9688 20.2188 47.9062 21.5 47.9062C22.7812 47.9062 23.8438 48.9688 23.8438 50.25V56.7188ZM39.8438 56.7188C39.8438 58 38.7812 59.0625 37.5 59.0625C36.2188 59.0625 35.1562 58 35.1562 56.7188V43.75C35.1562 42.4688 36.2188 41.4062 37.5 41.4062C38.7812 41.4062 39.8438 42.4688 39.8438 43.75V56.7188ZM55.8438 56.7188C55.8438 58 54.7813 59.0625 53.5 59.0625C52.2188 59.0625 51.1563 58 51.1563 56.7188V37.2812C51.1563 36 52.2188 34.9375 53.5 34.9375C54.7813 34.9375 55.8438 36 55.8438 37.2812V56.7188ZM55.8438 27.4063C55.8438 28.6875 54.7813 29.75 53.5 29.75C52.2188 29.75 51.1563 28.6875 51.1563 27.4063V24.375C43.1875 32.5625 33.2188 38.3438 22.0625 41.125C21.875 41.1875 21.6875 41.1875 21.5 41.1875C20.4375 41.1875 19.5 40.4688 19.2188 39.4062C18.9062 38.1562 19.6562 36.875 20.9375 36.5625C31.4688 33.9375 40.8438 28.4062 48.2812 20.5938H44.375C43.0938 20.5938 42.0312 19.5312 42.0312 18.25C42.0312 16.9688 43.0938 15.9062 44.375 15.9062H53.5312C53.6562 15.9062 53.75 15.9688 53.875 15.9688C54.0312 16 54.1875 16 54.3438 16.0625C54.5 16.125 54.625 16.2187 54.7813 16.3125C54.875 16.375 54.9688 16.4062 55.0625 16.4688C55.0938 16.5 55.0938 16.5312 55.125 16.5312C55.25 16.6562 55.3438 16.7812 55.4375 16.9062C55.5312 17.0312 55.625 17.125 55.6562 17.25C55.7188 17.375 55.7188 17.5 55.75 17.6562C55.7812 17.8125 55.8438 17.9688 55.8438 18.1562C55.8438 18.1875 55.875 18.2188 55.875 18.25V27.4063H55.8438Z"/>
-        </svg>
-        <h1 class="text-center text-xl font-bold my-2">
-            Misi
-        </h1>
-        <p class="text-center">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione eligendi nihil eius placeat
-                                                                                consequuntur, cum iusto aut ipsam nobis omnis obcaecati.
-        </p>
-    </div>
-</div></div><!-- Buat Website --><div class="bg-secondary container mx-auto mt-16 p-8 flex flex-col sm:flex-row">
-<div class="w-full sm:w-2/5 flex items-center justify-center">
-    <img src="./src/assets/images/icon/illustration/laptop.png" class="w-[200px]">
-</div>
-<div class="sm:px-8 w-full sm:w-3/5 flex flex-col justify-center">
-    <h1 class="text-3xl font-bold text-primary mt-4 sm:mt-0">Buat Website Terbaikmu</h1>
-    <p class="text-primary mt-4">Mari mulai membangun
-                                                            Website yang lebih baik hari ini dengan menjadikan Eunoia sebagai partnermu.
-    </p>
-    <button type="button" class=" text-primary border-2 border-third bg-third white hover:bg-transparent hover:border-third hover:text-third focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded text-base px-5 py-2.5 text-center mt-4 dark:focus:ring-blue-800 duration-300 w-44">
-        Mulai Konsultasi
-    </button>
-</div></div><div class="container mx-auto"></div><!-- footer --><div class="bg-secondary z-0 w-full flex flex-col mx-auto px-4 h-auto sm:h-auto mt-16 sm:px4">
-<div class="container mx-auto flex-col flex sm:flex-row h-auto">
-    <div
-        class="mx-auto grid grid-cols-1 my-16 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-6">
-        <!-- Kepercayaan -->
-        <div class="p-4 rounded-lg text-primary">
-            <img src="./src/assets/images/eunoia/eunoia.png" class="w-[250px]">
-            <h1 class="text-base font-bold my-2">
-                Web Designer & Developer
-            </h1>
+    <!-- Kenapa Eunoia -->
+    <div id="keunggulan-section" class="bg-primary container mx-auto px-4 flex flex-col items-center">
+        <div class="w-full sm:w-[550px] text-center">
+            <h1 class=" mt-16 text-3xl font-bold mx-auto">Kenapa Eunoia</h1>
+            <p class="text-center mt-4">Begitu banyak sebab kenapa kamu harus memilih kami sebagai web designer dan
+                developer kamu.</p>
         </div>
-        <!--  -->
-        <div class="p-4 rounded-lg text-primary">
-            <h1>HOME</h1>
-            <div class="flex items-center">
-                <svg class="mr" width="20" height="20" viewbox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M190 131.125L165.375 106.5L125.25 66.3751C116.75 58.0001 102.25 64.0001 102.25 76.0001V153.875V224C102.25 236 116.75 242 125.25 233.5L190 168.75C200.375 158.5 200.375 141.5 190 131.125Z" class="fill-primary"/>
-                </svg>
-                <a href="#" class="inline-block my-2 hover:text-third hover:ml-2 duration-300 font-medium">
-                    Penawaran</a>
+        <div class="container">
+            <div class=" grid grid-cols-1 mt-16 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-6">
+                <!--Pengerjaan Cepat-->
+                <div class="p-4 rounded-lg ">
+                    <svg class="w-20 mx-auto fill-secondary" viewbox="0 0 75 75" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M48.117 58.4098C48.5005 58.2121 48.9576 58.5435 48.8715 58.9663L48.4062 61.25C46.875 67.1875 43.4375 68.75 39.2187 68.75H35.8125C31.5937 68.75 28.125 67.1875 26.625 61.2187L26.1793 58.9479C26.0968 58.5277 26.549 58.2003 26.9303 58.3953C30.1833 60.0587 33.777 60.9375 37.5 60.9375C41.2458 60.9375 44.8628 60.0871 48.117 58.4098Z" />
+                        <path
+                            d="M48.8939 16.0823C48.9827 16.507 48.5221 16.8411 48.1374 16.6405C44.9608 14.9836 41.3455 14.0625 37.5 14.0625C33.678 14.0625 30.0868 14.9859 26.9123 16.6235C26.5293 16.8211 26.0732 16.49 26.1593 16.0676L26.625 13.7812C28.125 7.8125 31.5937 6.25 35.8125 6.25H39.2188C43.4375 6.25 46.875 7.8125 48.4062 13.75L48.8939 16.0823Z" />
+                        <path
+                            d="M37.5 17.1875C26.2813 17.1875 17.1875 26.2813 17.1875 37.5C17.1875 44.0625 20.2812 49.875 25.0937 53.5937H25.125C28.5625 56.25 32.8437 57.8125 37.5 57.8125C42.2187 57.8125 46.5312 56.2187 49.9687 53.5312H50C54.75 49.8125 57.8125 44 57.8125 37.5C57.8125 26.2813 48.7187 17.1875 37.5 17.1875ZM43.5313 44.9375C43.0625 45.4063 42.4687 45.625 41.875 45.625C41.2812 45.625 40.6875 45.4063 40.2187 44.9375L35.8438 40.5625C35.4063 40.125 35.1562 39.5312 35.1562 38.9062V30.1875C35.1562 28.9062 36.2188 27.8437 37.5 27.8437C38.7812 27.8437 39.8438 28.9062 39.8438 30.1875V37.9375L43.5313 41.625C44.4375 42.5312 44.4375 44.0313 43.5313 44.9375Z" />
+                    </svg>
+                    <h1 class=" text-center text-xl font-bold my-2">
+                        Pengerjaan Cepat
+                    </h1>
+                    <p class="text-center">
+                        Tim kami akan bekerja dengan cepat sesuai paket yang kamu pilih.
+                        Kami menjamin pengerjaan tanpa melewati tenggat waktu.
+                    </p>
+                </div>
+                <!-- Profesional-->
+                <div class="p-4 rounded-lg ">
+                    <svg class="w-20 mx-auto fill-secondary" viewbox="0 0 75 75" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M62.5 18.75V19.5H46.4687C37.1875 19.5 32.875 23.8125 32.875 33.0938V49.0625H30.4688V60.1562H32.875V64.8438H15.4687C14.1875 64.8438 13.125 63.7812 13.125 62.5C13.125 61.2188 14.1875 60.1562 15.4687 60.1562H25.7812V49.0625H18.75C8.96875 49.0625 6.34375 46.6562 6.25 37.1875V18.75C6.25 8.75 8.75 6.25 18.75 6.25H50C60 6.25 62.5 8.75 62.5 18.75Z" />
+                        <path
+                            d="M62.5 24.3438C61.7188 24.25 60.8125 24.1875 59.8437 24.1875H46.4687C39.7812 24.1875 37.5625 26.4063 37.5625 33.0938V60.1563C37.5938 62.0938 37.8125 63.625 38.2812 64.8438C39.375 67.6875 41.8437 68.75 46.4687 68.75H59.8437C66.5312 68.75 68.75 66.5312 68.75 59.8437V33.0938C68.75 27.375 67.125 24.9375 62.5 24.3438ZM53.1563 31.5313C55.875 31.5313 58.0625 33.7188 58.0625 36.4375C58.0625 39.1563 55.875 41.3437 53.1563 41.3437C50.4375 41.3437 48.25 39.1563 48.25 36.4375C48.25 33.7188 50.4375 31.5313 53.1563 31.5313ZM53.1563 59.8437C49.4688 59.8437 46.4687 56.8438 46.4687 53.1563C46.4687 51.625 47 50.1875 47.875 49.0625C49.0937 47.5 51 46.4688 53.1563 46.4688C54.8438 46.4688 56.375 47.0938 57.5312 48.0938C58.9375 49.3438 59.8437 51.1563 59.8437 53.1563C59.8437 56.8438 56.8438 59.8437 53.1563 59.8437Z" />
+                        <path
+                            d="M62.5 24.3438C61.7188 24.25 60.8125 24.1875 59.8437 24.1875H46.4687C39.7812 24.1875 37.5625 26.4063 37.5625 33.0938V60.1563C37.5938 62.0938 37.8125 63.625 38.2812 64.8438C39.375 67.6875 41.8437 68.75 46.4687 68.75H59.8437C66.5312 68.75 68.75 66.5312 68.75 59.8437V33.0938C68.75 27.375 67.125 24.9375 62.5 24.3438ZM53.1563 31.5313C55.875 31.5313 58.0625 33.7188 58.0625 36.4375C58.0625 39.1563 55.875 41.3437 53.1563 41.3437C50.4375 41.3437 48.25 39.1563 48.25 36.4375C48.25 33.7188 50.4375 31.5313 53.1563 31.5313ZM53.1563 59.8437C49.4688 59.8437 46.4687 56.8438 46.4687 53.1563C46.4687 51.625 47 50.1875 47.875 49.0625C49.0937 47.5 51 46.4688 53.1563 46.4688C54.8438 46.4688 56.375 47.0938 57.5312 48.0938C58.9375 49.3438 59.8437 51.1563 59.8437 53.1563C59.8437 56.8438 56.8438 59.8437 53.1563 59.8437Z" />
+                    </svg>
+                    <h1 class="text-secondary text-center text-xl font-bold my-2">
+                        Profesional
+                    </h1>
+                    <p class="text-center">
+                        Walaupun kami membuat websitemu dengan cepat bukan berarti asal jadi, website kamu akan
+                        dikerjakan dengan teliti dan tidak mengabikan unsur penting.
+                    </p>
+                </div>
+                <!--Pembayaran Mudah-->
+                <div class="p-4 rounded-lg ">
+                    <svg class="w-20 mx-auto fill-secondary" viewbox="0 0 75 75" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M37.3125 6.90626L29.7813 24.4375H22.25C21 24.4375 19.7813 24.5313 18.5938 24.7813L21.7188 17.2813L21.8438 17L22.0313 16.5C22.125 16.2813 22.1875 16.0938 22.2813 15.9375C25.9063 7.53126 29.9688 4.90626 37.3125 6.90626Z" />
+                        <path
+                            d="M58.5312 25.2812L58.4687 25.25C56.5937 24.7188 54.6875 24.4375 52.75 24.4375H33.1875L40.2188 8.09375L40.3125 7.875C40.75 8.03125 41.2188 8.25 41.6875 8.40625L48.5938 11.3125C52.4375 12.9062 55.125 14.5625 56.7812 16.5625C57.0625 16.9375 57.3125 17.2812 57.5625 17.6875C57.8438 18.125 58.0625 18.5625 58.1875 19.0313C58.3125 19.3125 58.4062 19.5625 58.4687 19.8438C58.9375 21.4375 58.9687 23.25 58.5312 25.2812Z" />
+                        <path
+                            d="M39.125 55.1875H39.9063C40.8438 55.1875 41.625 54.3437 41.625 53.3125C41.625 52 41.25 51.8125 40.4375 51.5L39.125 51.0312V55.1875Z" />
+                        <path
+                            d="M57.1563 29.75C55.75 29.3438 54.2812 29.125 52.75 29.125H22.25C20.125 29.125 18.125 29.5313 16.25 30.3438C10.8125 32.6875 7 38.0938 7 44.375V50.4688C7 51.2188 7.0625 51.9375 7.15625 52.6875C7.84375 62.625 13.1562 67.9375 23.0937 68.5938C23.8125 68.6875 24.5313 68.75 25.3125 68.75H49.6875C61.25 68.75 67.3438 63.25 67.9375 52.3125C67.9688 51.7188 68 51.0938 68 50.4688V44.375C68 37.4688 63.4063 31.6563 57.1563 29.75ZM41.5 48.4375C42.9375 48.9375 44.875 50 44.875 53.3125C44.875 56.1562 42.6563 58.4375 39.9063 58.4375H39.125V59.125C39.125 60.0313 38.4062 60.75 37.5 60.75C36.5938 60.75 35.875 60.0313 35.875 59.125V58.4375H35.5938C32.5938 58.4375 30.125 55.9062 30.125 52.7812C30.125 51.875 30.8438 51.1563 31.75 51.1563C32.6562 51.1563 33.375 51.875 33.375 52.7812C33.375 54.0937 34.375 55.1875 35.5938 55.1875H35.875V49.9063L33.5 49.0625C32.0625 48.5625 30.125 47.5 30.125 44.1875C30.125 41.3438 32.3438 39.0625 35.0938 39.0625H35.875V38.375C35.875 37.4688 36.5938 36.75 37.5 36.75C38.4062 36.75 39.125 37.4688 39.125 38.375V39.0625H39.4062C42.4062 39.0625 44.875 41.5938 44.875 44.7188C44.875 45.625 44.1562 46.3438 43.25 46.3438C42.3438 46.3438 41.625 45.625 41.625 44.7188C41.625 43.4063 40.625 42.3125 39.4062 42.3125H39.125V47.5938L41.5 48.4375Z" />
+                        <path
+                            d="M33.375 44.1875C33.375 45.5 33.75 45.6875 34.5625 46L35.875 46.4688V42.3125H35.0937C34.125 42.3125 33.375 43.1563 33.375 44.1875Z" />
+                    </svg>
+                    <h1 class="text-secondary text-center text-xl font-bold my-2">
+                        Pembayaran Mudah
+                    </h1>
+                    <p class="text-center">
+                        Kamu bisa melakukan order via whatsapp ataupun form dan kamu akan mendaptkan invoice detail
+                        pembelian jasa pembuata website dengan sistem otomatis.
+                    </p>
+                </div>
+                <!--Revisi Tanpa Batas-->
+                <div class="p-4 rounded-lg ">
+                    <svg class="w-20 mx-auto fill-secondary" viewbox="0 0 75 75" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M65.625 68.75H9.375C8.09375 68.75 7.03125 67.6875 7.03125 66.4062C7.03125 65.125 8.09375 64.0625 9.375 64.0625H65.625C66.9062 64.0625 67.9688 65.125 67.9688 66.4062C67.9688 67.6875 66.9062 68.75 65.625 68.75Z" />
+                        <path
+                            d="M59.4375 10.875C53.375 4.8125 47.4375 4.65625 41.2187 10.875L37.4375 14.6563C37.125 14.9688 37 15.4688 37.125 15.9063C39.5 24.1875 46.125 30.8125 54.4062 33.1875C54.5312 33.2188 54.6562 33.25 54.7812 33.25C55.125 33.25 55.4375 33.125 55.6875 32.875L59.4375 29.0938C62.5312 26.0313 64.0312 23.0625 64.0312 20.0625C64.0625 16.9688 62.5625 13.9688 59.4375 10.875Z" />
+                        <path
+                            d="M48.7812 36.0312C47.875 35.5937 47 35.1562 46.1562 34.6562C45.4687 34.25 44.8125 33.8125 44.1562 33.3437C43.625 33 43 32.5 42.4062 32C42.3437 31.9687 42.125 31.7812 41.875 31.5312C40.8437 30.6562 39.6875 29.5313 38.6562 28.2812C38.5625 28.2188 38.4062 28 38.1875 27.7187C37.875 27.3437 37.3437 26.7187 36.875 26C36.5 25.5312 36.0625 24.8437 35.6562 24.1562C35.1562 23.3125 34.7187 22.4687 34.2812 21.5937C33.9675 20.9214 33.7019 20.2651 33.4616 19.6365C33.3314 19.296 32.8937 19.2 32.636 19.4578L13.5625 38.5312C13.1562 38.9375 12.7812 39.7187 12.6875 40.25L11 52.2187C10.6875 54.3437 11.2812 56.3437 12.5937 57.6875C13.7187 58.7812 15.2812 59.375 16.9687 59.375C17.3437 59.375 17.7187 59.3437 18.0937 59.2812L30.0937 57.5938C30.6562 57.5 31.4375 57.125 31.8125 56.7187L50.8788 37.6524C51.1383 37.3929 51.0393 36.9507 50.6966 36.8192C50.0756 36.5809 49.4525 36.3221 48.7812 36.0312Z" />
+                    </svg>
+                    <h1 class=" text-center text-xl font-bold my-2">
+                        Revisi Tanpa Batas
+                    </h1>
+                    <p class="text-center">
+                        Dengan semangat penuh kami siap memenuhi permintaan kamu. Kami menawarkan jumlah revisi yang tak
+                        terbatas hingga project telah selesai.
+                    </p>
+                </div>
+                <!--Sumber File Lengkap-->
+                <div class="p-4 rounded-lg ">
+                    <svg class="w-20 mx-auto fill-secondary" viewbox="0 0 75 75" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M65.8125 36.9375L65.3125 36.25C64.4375 35.1875 63.4062 34.3437 62.2187 33.7187C60.625 32.8125 58.8125 32.3438 56.9375 32.3438H18.0312C16.1562 32.3438 14.375 32.8125 12.75 33.7187C11.5312 34.375 10.4375 35.2812 9.53125 36.4062C7.75 38.6875 6.90625 41.5 7.1875 44.3125L8.34375 58.9062C8.75 63.3125 9.28125 68.75 19.1875 68.75H55.8125C65.7188 68.75 66.2187 63.3125 66.6562 58.875L67.8125 44.3437C68.0938 41.7187 67.4062 39.0937 65.8125 36.9375ZM44.9688 54.1875H30C28.7813 54.1875 27.8125 53.1875 27.8125 52C27.8125 50.8125 28.7813 49.8125 30 49.8125H44.9688C46.1875 49.8125 47.1563 50.8125 47.1563 52C47.1563 53.2187 46.1875 54.1875 44.9688 54.1875Z" />
+                        <path
+                            d="M64.379 28.6964C64.3952 29.0807 63.9835 29.3338 63.6363 29.1682C61.5664 28.1811 59.3293 27.6875 56.9688 27.6875H18.0312C15.6698 27.6875 13.3578 28.2062 11.3147 29.1776C10.9714 29.3409 10.5625 29.0976 10.5625 28.7174V20.8125C10.5625 9.65625 13.9687 6.25 25.125 6.25H28.8125C33.2812 6.25 34.6875 7.6875 36.5 10.0312L40.25 15.0312C41.0312 16.0938 41.0625 16.1562 42.4375 16.1562H49.875C60.3455 16.1562 63.9779 19.1627 64.379 28.6964Z" />
+                    </svg>
+                    <h1 class="text-secondary text-center text-xl font-bold my-2">
+                        Terima Jadi
+                    </h1>
+                    <p class="text-center">
+                        Semua paket yang kami tawarkan adalah terima jadi dan siap pakai, fokuslah ke bisnis Anda, semua
+                        masalah teknis biarkan kami yang tangani.
+                    </p>
+                </div>
+                <!--Layanan Support-->
+                <div class="p-4 rounded-lg ">
+                    <svg class="w-20 mx-auto fill-secondary" viewbox="0 0 75 75" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M41.2187 18.75H21.2187C20.4062 18.75 19.625 18.7812 18.875 18.875C10.4687 19.5937 6.25 24.5625 6.25 33.7188V46.2188C6.25 58.7188 11.25 61.1875 21.2187 61.1875H22.4688C23.1563 61.1875 24.0625 61.6563 24.4687 62.1875L28.2187 67.1875C29.875 69.4063 32.5625 69.4063 34.2187 67.1875L37.9687 62.1875C38.4375 61.5625 39.1875 61.1875 39.9687 61.1875H41.2187C50.375 61.1875 55.3438 57 56.0625 48.5625C56.1563 47.8125 56.1875 47.0313 56.1875 46.2188V33.7188C56.1875 23.75 51.1875 18.75 41.2187 18.75ZM20.3125 43.75C18.5625 43.75 17.1875 42.3438 17.1875 40.625C17.1875 38.9063 18.5937 37.5 20.3125 37.5C22.0313 37.5 23.4375 38.9063 23.4375 40.625C23.4375 42.3438 22.0313 43.75 20.3125 43.75ZM31.2187 43.75C29.4687 43.75 28.0937 42.3438 28.0937 40.625C28.0937 38.9063 29.5 37.5 31.2187 37.5C32.9375 37.5 34.3437 38.9063 34.3437 40.625C34.3437 42.3438 32.9687 43.75 31.2187 43.75ZM42.1562 43.75C40.4062 43.75 39.0312 42.3438 39.0312 40.625C39.0312 38.9063 40.4375 37.5 42.1562 37.5C43.875 37.5 45.2812 38.9063 45.2812 40.625C45.2812 42.3438 43.875 43.75 42.1562 43.75Z" />
+                        <path
+                            d="M68.6875 21.2187V33.7187C68.6875 39.9687 66.75 44.2187 62.875 46.5625C61.9375 47.125 60.8438 46.375 60.8438 45.2812L60.875 33.7187C60.875 21.2187 53.7188 14.0625 41.2188 14.0625L22.1875 14.0938C21.0937 14.0938 20.3438 13 20.9063 12.0625C23.25 8.1875 27.5 6.25 33.7188 6.25H53.7188C63.6875 6.25 68.6875 11.25 68.6875 21.2187Z" />
+                    </svg>
+                    <h1 class="text-secondary text-center text-xl font-bold my-2">
+                        Layanan Support
+                    </h1>
+                    <p class="text-center">
+                        Jika ada keperluan atau kendala di website selama kamu masih menggunakan jasa kami, hubungi kami
+                        kapanpun yang kamu mau.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tentang Kami -->
+    <div id="about-section"
+        class="bg-secondar container pt-32 mx-auto flex flex-col sm:flex-row h-full text-primary sm:rounded-br-[200px]">
+        <div class="w-full sm:w-1/2 px-8 pt-8 sm:pt-0">
+            <img src="./src/assets/images/pictures/tentangkamiL.jpg" class="w-full mx-auto">
+        </div>
+        <div class="w-full sm:w-1/2 px-8 pt-8 sm:pt-0 text-secondary">
+            <h1 class="text-3xl font-bold ">Tentang Kami</h1>
+            <p class="mt-4">Eunoia adalah sebuah Web Designer sekaligus Web Developer yang berbasis di Surabaya,
+                Indonesia. Beroperasi sejak 2017, sudah membantu hingga 150+ client di seluruh Indonesia. Kami
+                menyediakan jasa pembuatan web mulai dari Company Profile, Toko Online, Web Travel, Web Booking, Web
+                Sales, hingga Web Personal.</p>
+            <p class="mt-4">Visi kami untuk berkontribusi dalam membangun dan mengembangkan usaha UMKM baik
+                perseorangan, CV maupun PT pada
+                era Digital Marketing melalui jasa desain web dan developmentnya.</p>
+            <p class="mt-4">Misi kami untuk berkontribusi dalam membangun dan mengembangkan usaha UMKM baik
+                perseorangan, CV maupun PT pada
+                era Digital Marketing melalui jasa desain web dan developmentnya.</p>
+        </div>
+    </div>
+
+
+    <!-- Buat Website -->
+    <div class="bg-secondary container mx-auto mt-32 p-8 flex flex-col sm:flex-row">
+        <div class="w-full sm:w-2/5 flex items-center justify-center">
+            <img src="./src/assets/images/icon/illustration/laptop.png" class="w-[200px]">
+        </div>
+        <div class="sm:px-8 w-full sm:w-3/5 flex flex-col justify-center">
+            <h1 class="text-3xl font-bold text-primary mt-4 sm:mt-0">Buat Website Terbaikmu</h1>
+            <p class="text-primary mt-4">Mari mulai membangun
+                Website yang lebih baik hari ini dengan menjadikan Eunoia sebagai partnermu.
+            </p>
+            <button type="button"
+                class=" text-primary border-2 border-third bg-third white hover:bg-transparent hover:border-third hover:text-third focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded text-base px-5 py-2.5 text-center mt-4 dark:focus:ring-blue-800 duration-300 w-44">
+                Mulai Konsultasi
+            </button>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class="bg-secondary z-0 w-full flex flex-col mx-auto px-4 h-auto sm:h-auto mt-16 sm:px4">
+        <div class="container mx-auto b-red-400 text-primary flex flex-col sm:flex-row py-8">
+            <div class="w-full sm:w-1/2">
+                <div class="p-4 rounded-lg text-primary">
+                    <img src="./src/assets/images/eunoia/eunoia.png" class="w-[250px]">
+                    <h1 class="text-base font-bold my-2">
+                        Web Designer & Developer
+                    </h1>
+                </div>
+            </div>
+            <div class="w-full sm:w-1/2 flex b-blue-300">
+                <div class="mx-auto flex flex-col sm:flex-row b-red-600 w-full">
+                    <div class="p-4 rounded-lg w-full sm:w-1/3 text-primary b-yellow-400">
+                        <h1>Company</h1>
+                        <div class="flex items-center">
+                            <svg class="mr" width="20" height="20" viewbox="0 0 300 300" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M190 131.125L165.375 106.5L125.25 66.3751C116.75 58.0001 102.25 64.0001 102.25 76.0001V153.875V224C102.25 236 116.75 242 125.25 233.5L190 168.75C200.375 158.5 200.375 141.5 190 131.125Z"
+                                    class="fill-primary" />
+                            </svg>
+                            <a href="index.html#about-section" class="inline-block my-2 hover:text-third hover:ml-2 duration-300 font-medium">
+                                About</a>
+                        </div>
+                        <div class="flex items-center">
+                            <svg class="mr" width="20" height="20" viewbox="0 0 300 300" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M190 131.125L165.375 106.5L125.25 66.3751C116.75 58.0001 102.25 64.0001 102.25 76.0001V153.875V224C102.25 236 116.75 242 125.25 233.5L190 168.75C200.375 158.5 200.375 141.5 190 131.125Z"
+                                    class="fill-primary" />
+                            </svg>
+                            <a href="portfolio.html" class="flex items-center my-2 hover:text-third hover:ml-2 duration-300 font-medium">
+                                Portfolio</a>
+                        </div>
+                        <div class="flex items-center">
+                            <svg class="mr" width="20" height="20" viewbox="0 0 300 300" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M190 131.125L165.375 106.5L125.25 66.3751C116.75 58.0001 102.25 64.0001 102.25 76.0001V153.875V224C102.25 236 116.75 242 125.25 233.5L190 168.75C200.375 158.5 200.375 141.5 190 131.125Z"
+                                    class="fill-primary" />
+                            </svg>
+                            <a href="contact.html" class="flex items-center my-2 hover:text-third hover:ml-2 duration-300 font-medium">
+                                Contact</a>
+                        </div>
+                    </div>
+                    <div class="p-4 rounded-lg w-full sm:w-1/3 text-primary b-purple-400">
+                        <h1>Services</h1>
+                        <div class="flex items-center">
+                            <svg class="mr" width="20" height="20" viewbox="0 0 300 300" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M190 131.125L165.375 106.5L125.25 66.3751C116.75 58.0001 102.25 64.0001 102.25 76.0001V153.875V224C102.25 236 116.75 242 125.25 233.5L190 168.75C200.375 158.5 200.375 141.5 190 131.125Z"
+                                    class="fill-primary" />
+                            </svg>
+                            <a href="#" class="flex items-center my-2 hover:text-third hover:ml-2 duration-300 font-medium">
+                                Web Perusahaan
+                            </a>
+                        </div>
+                        <div class="flex items-center">
+                            <svg class="mr" width="20" height="20" viewbox="0 0 300 300" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M190 131.125L165.375 106.5L125.25 66.3751C116.75 58.0001 102.25 64.0001 102.25 76.0001V153.875V224C102.25 236 116.75 242 125.25 233.5L190 168.75C200.375 158.5 200.375 141.5 190 131.125Z"
+                                    class="fill-primary" />
+                            </svg>
+                            <a href="#" class=" flex items-center my-2 hover:text-third hover:ml-2 duration-300 font-medium">
+                                Web Toko Online
+                            </a>
+                        </div>
+                        <div class="flex items-center">
+                            <svg class="mr" width="20" height="20" viewbox="0 0 300 300" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M190 131.125L165.375 106.5L125.25 66.3751C116.75 58.0001 102.25 64.0001 102.25 76.0001V153.875V224C102.25 236 116.75 242 125.25 233.5L190 168.75C200.375 158.5 200.375 141.5 190 131.125Z"
+                                    class="fill-primary" />
+                            </svg>
+                            <a href="#" class="flex items-center my-2 hover:text-third hover:ml-2 duration-300 font-medium">
+                                Web Personal
+                            </a>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="container mx-auto border-t-2 border-third flex flex-col sm:flex-row justify-between">
+            <div class="mt-2 text-primary text-xs text-center space-x-2">
+                <a href="" class="hover:text-third  duration-300">PRIVACY POLICY
+                </a>
+                <a href="" class="hover:text-third  duration-300">TERMS AND CONDITIONS
+                </a>
+                <a href="" class="hover:text-third  duration-300">NEWSLETTER
+                </a>
+            </div>
+            <div class="mx-auto sm:mx-0 mt-16 sm:mt-2 text-primary flex space-x-2">
+                <!-- instagram -->
+                <a href="https://instagram.com/radyanbintang">
+                    <svg class="w-[25px] fill-primary hover:fill-third duration-300" viewbox="0 0 300 300"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M202.375 25H97.625C52.125 25 25 52.125 25 97.625V202.25C25 247.875 52.125 275 97.625 275H202.25C247.75 275 274.875 247.875 274.875 202.375V97.625C275 52.125 247.875 25 202.375 25ZM150 198.5C123.25 198.5 101.5 176.75 101.5 150C101.5 123.25 123.25 101.5 150 101.5C176.75 101.5 198.5 123.25 198.5 150C198.5 176.75 176.75 198.5 150 198.5ZM224 86C223.375 87.5 222.5 88.875 221.375 90.125C220.125 91.25 218.75 92.125 217.25 92.75C215.75 93.375 214.125 93.75 212.5 93.75C209.125 93.75 206 92.5 203.625 90.125C202.5 88.875 201.625 87.5 201 86C200.375 84.5 200 82.875 200 81.25C200 79.625 200.375 78 201 76.5C201.625 74.875 202.5 73.625 203.625 72.375C206.5 69.5 210.875 68.125 214.875 69C215.75 69.125 216.5 69.375 217.25 69.75C218 70 218.75 70.375 219.5 70.875C220.125 71.25 220.75 71.875 221.375 72.375C222.5 73.625 223.375 74.875 224 76.5C224.625 78 225 79.625 225 81.25C225 82.875 224.625 84.5 224 86Z" />
+                    </svg>
+                </a>
+                <!-- facebook -->
+                <a href="https://facebook.com/radyanbintangh">
+                    <svg class="w-[25px] fill-primary hover:fill-third duration-300" viewbox="0 0 300 300" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M275 202.375C275 247.875 247.875 275 202.375 275H187.5C180.625 275 175 269.375 175 262.5V190.375C175 187 177.75 184.125 181.125 184.125L203.125 183.75C204.875 183.625 206.375 182.375 206.75 180.625L211.125 156.75C211.5 154.5 209.75 152.375 207.375 152.375L180.75 152.75C177.25 152.75 174.5 150 174.375 146.625L173.875 116C173.875 114 175.5 112.25 177.625 112.25L207.625 111.75C209.75 111.75 211.375 110.125 211.375 108L210.875 77.9999C210.875 75.8749 209.25 74.25 207.125 74.25L173.375 74.7501C152.625 75.1251 136.125 92.125 136.5 112.875L137.125 147.25C137.25 150.75 134.5 153.5 131 153.625L116 153.875C113.875 153.875 112.25 155.5 112.25 157.625L112.625 181.375C112.625 183.5 114.25 185.125 116.375 185.125L131.375 184.875C134.875 184.875 137.625 187.625 137.75 191L138.875 262.25C139 269.25 133.375 275 126.375 275H97.625C52.125 275 25 247.875 25 202.25V97.625C25 52.125 52.125 25 97.625 25H202.375C247.875 25 275 52.125 275 97.625V202.375V202.375Z" />
+                    </svg>
+                </a>
+                <!-- whatsapp -->
+                <a href="https://wa.me/628993425805">
+                    <svg class="w-[25px] fill-primary hover:fill-third duration-300" viewbox="0 0 300 300" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M274.752 142.63C270.502 70.1305 204.628 14.2556 128.753 26.7556C76.5026 35.3806 34.6277 77.7554 26.5027 130.005C21.7527 160.255 28.003 188.88 41.628 212.505L30.5028 253.88C28.0028 263.255 36.6275 271.755 45.8775 269.13L86.6277 257.88C105.128 268.755 126.753 275.005 149.878 275.005C220.378 275.005 278.877 212.88 274.752 142.63ZM211.003 196.505C209.878 198.755 208.502 200.881 206.752 202.881C203.627 206.256 200.252 208.756 196.502 210.256C192.752 211.881 188.628 212.631 184.253 212.631C177.878 212.631 171.003 211.131 163.878 208.006C156.628 204.881 149.503 200.755 142.378 195.63C135.128 190.38 128.378 184.505 121.878 178.13C115.378 171.63 109.627 164.755 104.377 157.63C99.2524 150.505 95.1277 143.38 92.1277 136.255C89.1277 129.13 87.6279 122.256 87.6279 115.756C87.6279 111.506 88.3778 107.381 89.8778 103.631C91.3778 99.7555 93.753 96.2556 97.128 93.1306C101.128 89.1306 105.503 87.2556 110.128 87.2556C111.878 87.2556 113.627 87.6305 115.252 88.3805C116.877 89.1305 118.378 90.2555 119.503 91.8805L134.002 112.38C135.127 114.005 136.003 115.38 136.503 116.755C137.128 118.13 137.378 119.38 137.378 120.63C137.378 122.13 136.878 123.631 136.003 125.131C135.128 126.631 134.002 128.13 132.502 129.63L127.752 134.63C127.002 135.38 126.753 136.13 126.753 137.13C126.753 137.63 126.877 138.13 127.002 138.63C127.252 139.13 127.378 139.505 127.503 139.88C128.628 142.005 130.628 144.63 133.378 147.88C136.253 151.13 139.253 154.505 142.503 157.755C145.878 161.13 149.128 164.13 152.503 167.005C155.753 169.755 158.502 171.631 160.627 172.756C161.002 172.881 161.378 173.13 161.753 173.255C162.253 173.505 162.753 173.506 163.378 173.506C164.503 173.506 165.253 173.131 166.003 172.381L170.752 167.63C172.377 166.005 173.878 164.881 175.253 164.131C176.753 163.256 178.128 162.755 179.753 162.755C181.003 162.755 182.253 163.005 183.628 163.63C185.003 164.255 186.502 165.006 188.002 166.131L208.753 180.88C210.378 182.005 211.502 183.381 212.252 184.881C212.877 186.506 213.253 188.005 213.253 189.755C212.503 191.88 212.003 194.255 211.003 196.505Z" />
+                    </svg>
+                </a>
+                <!-- telepon -->
+                <a href="tel:0899-3425-805">
+                    <svg class="w-[25px] fill-primary hover:fill-third duration-300" viewbox="0 0 300 300" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M138.125 186.875L115 210C110.125 214.875 102.375 214.875 97.375 210.125C96 208.75 94.625 207.5 93.25 206.125C80.375 193.125 68.75 179.5 58.375 165.25C48.125 151 39.875 136.75 33.875 122.625C28 108.375 25 94.75 25 81.75C25 73.25 26.5 65.125 29.5 57.625C32.5 50 37.25 43 43.875 36.75C51.875 28.875 60.625 25 69.875 25C73.375 25 76.875 25.75 80 27.25C83.25 28.75 86.125 31 88.375 34.25L117.375 75.125C119.625 78.25 121.25 81.125 122.375 83.875C123.5 86.5 124.125 89.125 124.125 91.5C124.125 94.5 123.25 97.5 121.5 100.375C119.875 103.25 117.5 106.25 114.5 109.25L105 119.125C103.625 120.5 103 122.125 103 124.125C103 125.125 103.125 126 103.375 127C103.75 128 104.125 128.75 104.375 129.5C106.625 133.625 110.5 139 116 145.5C121.625 152 127.625 158.625 134.125 165.25C135.375 166.5 136.75 167.75 138 169C143 173.875 143.125 181.875 138.125 186.875Z" />
+                        <path
+                            d="M274.621 229.113C274.621 232.613 273.996 236.238 272.746 239.738C272.371 240.738 271.996 241.738 271.496 242.738C269.371 247.238 266.621 251.488 262.996 255.488C256.871 262.238 250.121 267.113 242.496 270.238C242.371 270.238 242.246 270.363 242.121 270.363C234.746 273.363 226.746 274.988 218.121 274.988C205.371 274.988 191.746 271.988 177.371 265.863C162.996 259.738 148.621 251.488 134.371 241.113C129.496 237.488 124.621 233.863 119.996 229.988L160.871 189.113C164.371 191.738 167.496 193.738 170.121 195.113C170.746 195.363 171.496 195.738 172.371 196.113C173.371 196.488 174.371 196.613 175.496 196.613C177.621 196.613 179.246 195.863 180.621 194.488L190.121 185.113C193.246 181.988 196.246 179.613 199.121 178.113C201.996 176.363 204.871 175.488 207.996 175.488C210.371 175.488 212.871 175.988 215.621 177.113C218.371 178.238 221.246 179.863 224.371 181.988L265.746 211.363C268.996 213.613 271.246 216.238 272.621 219.363C273.871 222.488 274.621 225.613 274.621 229.113Z" />
+                    </svg>
+                </a>
+                <!-- email -->
+                <a href="mailto:radyan6661@gmail.com">
+                    <svg class="w-[25px] fill-primary hover:fill-third duration-300" viewbox="0 0 300 300" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M212.5 43.75H87.5C50 43.75 25 62.5 25 106.25V193.75C25 237.5 50 256.25 87.5 256.25H212.5C250 256.25 275 237.5 275 193.75V106.25C275 62.5 250 43.75 212.5 43.75ZM218.375 119.875L179.25 151.125C171 157.75 160.5 161 150 161C139.5 161 128.875 157.75 120.75 151.125L81.625 119.875C77.625 116.625 77 110.625 80.125 106.625C83.375 102.625 89.25 101.875 93.25 105.125L132.375 136.375C141.875 144 158 144 167.5 136.375L206.625 105.125C210.625 101.875 216.625 102.5 219.75 106.625C223 110.625 222.375 116.625 218.375 119.875Z" />
+                    </svg>
+                </a>
             </div>
 
-
-            <a href="#" class="flex items-center my-2 hover:text-third hover:ml-2 duration-300 font-medium">
-                <svg class="mr" width="20" height="20" viewbox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M190 131.125L165.375 106.5L125.25 66.3751C116.75 58.0001 102.25 64.0001 102.25 76.0001V153.875V224C102.25 236 116.75 242 125.25 233.5L190 168.75C200.375 158.5 200.375 141.5 190 131.125Z" class="fill-primary"/>
-                </svg>
-                Keunggulan
-            </a>
         </div>
-        <!--  -->
-        <div class="p-4 rounded-lg text-primary">
-            <h1>Company</h1>
-            <a href="#" class="flex items-center my-2 hover:text-third hover:ml-2 duration-300 font-medium">
-                <svg class="mr" width="20" height="20" viewbox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M190 131.125L165.375 106.5L125.25 66.3751C116.75 58.0001 102.25 64.0001 102.25 76.0001V153.875V224C102.25 236 116.75 242 125.25 233.5L190 168.75C200.375 158.5 200.375 141.5 190 131.125Z" class="fill-primary"/>
-                </svg>
-                About
-            </a>
-            <a href="#" class="flex items-center my-2 hover:text-third hover:ml-2 duration-300 font-medium">
-                <svg class="mr" width="20" height="20" viewbox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M190 131.125L165.375 106.5L125.25 66.3751C116.75 58.0001 102.25 64.0001 102.25 76.0001V153.875V224C102.25 236 116.75 242 125.25 233.5L190 168.75C200.375 158.5 200.375 141.5 190 131.125Z" class="fill-primary"/>
-                </svg>
-                Services
-            </a>
-            <a href="#" class="flex items-center my-2 hover:text-third hover:ml-2 duration-300 font-medium">
-                <svg class="mr" width="20" height="20" viewbox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M190 131.125L165.375 106.5L125.25 66.3751C116.75 58.0001 102.25 64.0001 102.25 76.0001V153.875V224C102.25 236 116.75 242 125.25 233.5L190 168.75C200.375 158.5 200.375 141.5 190 131.125Z" class="fill-primary"/>
-                </svg>
-                Portfolio
-            </a>
+        <div
+            class="bg-third container mx-auto mt-16 h-16 rounded-tl-[36px] rounded-tr-[36px] flex justify-center items-center">
+            <h1 class="font-medium text-primary">© 2022 ANXIETY</h1>
         </div>
-        <!--  -->
-        <div class="p-4 rounded-lg text-primary">
-            <h1>Company</h1>
-            <a href="#" class="flex items-center my-2 hover:text-third hover:ml-2 duration-300 font-medium">
-                <svg class="mr" width="20" height="20" viewbox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M190 131.125L165.375 106.5L125.25 66.3751C116.75 58.0001 102.25 64.0001 102.25 76.0001V153.875V224C102.25 236 116.75 242 125.25 233.5L190 168.75C200.375 158.5 200.375 141.5 190 131.125Z" class="fill-primary"/>
-                </svg>
-                About
-            </a>
-            <a href="#" class="flex items-center my-2 hover:text-third hover:ml-2 duration-300 font-medium">
-                <svg class="mr" width="20" height="20" viewbox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M190 131.125L165.375 106.5L125.25 66.3751C116.75 58.0001 102.25 64.0001 102.25 76.0001V153.875V224C102.25 236 116.75 242 125.25 233.5L190 168.75C200.375 158.5 200.375 141.5 190 131.125Z" class="fill-primary"/>
-                </svg>
-                Services
-            </a>
-            <a href="#" class="flex items-center my-2 hover:text-third hover:ml-2 duration-300 font-medium">
-                <svg class="mr" width="20" height="20" viewbox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M190 131.125L165.375 106.5L125.25 66.3751C116.75 58.0001 102.25 64.0001 102.25 76.0001V153.875V224C102.25 236 116.75 242 125.25 233.5L190 168.75C200.375 158.5 200.375 141.5 190 131.125Z" class="fill-primary"/>
-                </svg>
-                Portfolio
-            </a>
-        </div>
-    </div>
-</div>
-<div class="container mx-auto border-t-2 border-third flex flex-col sm:flex-row justify-between">
-    <div class="mt-2 text-primary text-xs text-center space-x-2">
-        <a href="" class="hover:text-third  duration-300">PRIVACY POLICY
-        </a>
-        <a href="" class="hover:text-third  duration-300">TERMS AND CONDITIONS
-        </a>
-        <a href="" class="hover:text-third  duration-300">NEWSLETTER
-        </a>
-    </div>
-    <div
-        class="mx-auto sm:mx-0 mt-16 sm:mt-2 text-primary flex space-x-2">
-        <!-- instagram -->
-        <a href="https://instagram.com/radyanbintang">
-            <svg class="w-[25px] fill-primary hover:fill-third duration-300" viewbox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
-                <path d="M202.375 25H97.625C52.125 25 25 52.125 25 97.625V202.25C25 247.875 52.125 275 97.625 275H202.25C247.75 275 274.875 247.875 274.875 202.375V97.625C275 52.125 247.875 25 202.375 25ZM150 198.5C123.25 198.5 101.5 176.75 101.5 150C101.5 123.25 123.25 101.5 150 101.5C176.75 101.5 198.5 123.25 198.5 150C198.5 176.75 176.75 198.5 150 198.5ZM224 86C223.375 87.5 222.5 88.875 221.375 90.125C220.125 91.25 218.75 92.125 217.25 92.75C215.75 93.375 214.125 93.75 212.5 93.75C209.125 93.75 206 92.5 203.625 90.125C202.5 88.875 201.625 87.5 201 86C200.375 84.5 200 82.875 200 81.25C200 79.625 200.375 78 201 76.5C201.625 74.875 202.5 73.625 203.625 72.375C206.5 69.5 210.875 68.125 214.875 69C215.75 69.125 216.5 69.375 217.25 69.75C218 70 218.75 70.375 219.5 70.875C220.125 71.25 220.75 71.875 221.375 72.375C222.5 73.625 223.375 74.875 224 76.5C224.625 78 225 79.625 225 81.25C225 82.875 224.625 84.5 224 86Z"/>
-            </svg>
-        </a>
-        <!-- facebook -->
-        <a href="https://facebook.com/radyanbintangh">
-            <svg class="w-[25px] fill-primary hover:fill-third duration-300" viewbox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M275 202.375C275 247.875 247.875 275 202.375 275H187.5C180.625 275 175 269.375 175 262.5V190.375C175 187 177.75 184.125 181.125 184.125L203.125 183.75C204.875 183.625 206.375 182.375 206.75 180.625L211.125 156.75C211.5 154.5 209.75 152.375 207.375 152.375L180.75 152.75C177.25 152.75 174.5 150 174.375 146.625L173.875 116C173.875 114 175.5 112.25 177.625 112.25L207.625 111.75C209.75 111.75 211.375 110.125 211.375 108L210.875 77.9999C210.875 75.8749 209.25 74.25 207.125 74.25L173.375 74.7501C152.625 75.1251 136.125 92.125 136.5 112.875L137.125 147.25C137.25 150.75 134.5 153.5 131 153.625L116 153.875C113.875 153.875 112.25 155.5 112.25 157.625L112.625 181.375C112.625 183.5 114.25 185.125 116.375 185.125L131.375 184.875C134.875 184.875 137.625 187.625 137.75 191L138.875 262.25C139 269.25 133.375 275 126.375 275H97.625C52.125 275 25 247.875 25 202.25V97.625C25 52.125 52.125 25 97.625 25H202.375C247.875 25 275 52.125 275 97.625V202.375V202.375Z"/>
-            </svg>
-        </a>
-        <!-- whatsapp -->
-        <a href="https://wa.me/628993425805">
-            <svg class="w-[25px] fill-primary hover:fill-third duration-300" viewbox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M274.752 142.63C270.502 70.1305 204.628 14.2556 128.753 26.7556C76.5026 35.3806 34.6277 77.7554 26.5027 130.005C21.7527 160.255 28.003 188.88 41.628 212.505L30.5028 253.88C28.0028 263.255 36.6275 271.755 45.8775 269.13L86.6277 257.88C105.128 268.755 126.753 275.005 149.878 275.005C220.378 275.005 278.877 212.88 274.752 142.63ZM211.003 196.505C209.878 198.755 208.502 200.881 206.752 202.881C203.627 206.256 200.252 208.756 196.502 210.256C192.752 211.881 188.628 212.631 184.253 212.631C177.878 212.631 171.003 211.131 163.878 208.006C156.628 204.881 149.503 200.755 142.378 195.63C135.128 190.38 128.378 184.505 121.878 178.13C115.378 171.63 109.627 164.755 104.377 157.63C99.2524 150.505 95.1277 143.38 92.1277 136.255C89.1277 129.13 87.6279 122.256 87.6279 115.756C87.6279 111.506 88.3778 107.381 89.8778 103.631C91.3778 99.7555 93.753 96.2556 97.128 93.1306C101.128 89.1306 105.503 87.2556 110.128 87.2556C111.878 87.2556 113.627 87.6305 115.252 88.3805C116.877 89.1305 118.378 90.2555 119.503 91.8805L134.002 112.38C135.127 114.005 136.003 115.38 136.503 116.755C137.128 118.13 137.378 119.38 137.378 120.63C137.378 122.13 136.878 123.631 136.003 125.131C135.128 126.631 134.002 128.13 132.502 129.63L127.752 134.63C127.002 135.38 126.753 136.13 126.753 137.13C126.753 137.63 126.877 138.13 127.002 138.63C127.252 139.13 127.378 139.505 127.503 139.88C128.628 142.005 130.628 144.63 133.378 147.88C136.253 151.13 139.253 154.505 142.503 157.755C145.878 161.13 149.128 164.13 152.503 167.005C155.753 169.755 158.502 171.631 160.627 172.756C161.002 172.881 161.378 173.13 161.753 173.255C162.253 173.505 162.753 173.506 163.378 173.506C164.503 173.506 165.253 173.131 166.003 172.381L170.752 167.63C172.377 166.005 173.878 164.881 175.253 164.131C176.753 163.256 178.128 162.755 179.753 162.755C181.003 162.755 182.253 163.005 183.628 163.63C185.003 164.255 186.502 165.006 188.002 166.131L208.753 180.88C210.378 182.005 211.502 183.381 212.252 184.881C212.877 186.506 213.253 188.005 213.253 189.755C212.503 191.88 212.003 194.255 211.003 196.505Z"/>
-            </svg>
-        </a>
-        <!-- telepon -->
-        <a href="tel:0899-3425-805">
-            <svg class="w-[25px] fill-primary hover:fill-third duration-300" viewbox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M138.125 186.875L115 210C110.125 214.875 102.375 214.875 97.375 210.125C96 208.75 94.625 207.5 93.25 206.125C80.375 193.125 68.75 179.5 58.375 165.25C48.125 151 39.875 136.75 33.875 122.625C28 108.375 25 94.75 25 81.75C25 73.25 26.5 65.125 29.5 57.625C32.5 50 37.25 43 43.875 36.75C51.875 28.875 60.625 25 69.875 25C73.375 25 76.875 25.75 80 27.25C83.25 28.75 86.125 31 88.375 34.25L117.375 75.125C119.625 78.25 121.25 81.125 122.375 83.875C123.5 86.5 124.125 89.125 124.125 91.5C124.125 94.5 123.25 97.5 121.5 100.375C119.875 103.25 117.5 106.25 114.5 109.25L105 119.125C103.625 120.5 103 122.125 103 124.125C103 125.125 103.125 126 103.375 127C103.75 128 104.125 128.75 104.375 129.5C106.625 133.625 110.5 139 116 145.5C121.625 152 127.625 158.625 134.125 165.25C135.375 166.5 136.75 167.75 138 169C143 173.875 143.125 181.875 138.125 186.875Z"/>
-                <path d="M274.621 229.113C274.621 232.613 273.996 236.238 272.746 239.738C272.371 240.738 271.996 241.738 271.496 242.738C269.371 247.238 266.621 251.488 262.996 255.488C256.871 262.238 250.121 267.113 242.496 270.238C242.371 270.238 242.246 270.363 242.121 270.363C234.746 273.363 226.746 274.988 218.121 274.988C205.371 274.988 191.746 271.988 177.371 265.863C162.996 259.738 148.621 251.488 134.371 241.113C129.496 237.488 124.621 233.863 119.996 229.988L160.871 189.113C164.371 191.738 167.496 193.738 170.121 195.113C170.746 195.363 171.496 195.738 172.371 196.113C173.371 196.488 174.371 196.613 175.496 196.613C177.621 196.613 179.246 195.863 180.621 194.488L190.121 185.113C193.246 181.988 196.246 179.613 199.121 178.113C201.996 176.363 204.871 175.488 207.996 175.488C210.371 175.488 212.871 175.988 215.621 177.113C218.371 178.238 221.246 179.863 224.371 181.988L265.746 211.363C268.996 213.613 271.246 216.238 272.621 219.363C273.871 222.488 274.621 225.613 274.621 229.113Z"/>
-            </svg>
-        </a>
-        <!-- email -->
-        <a href="mailto:radyan6661@gmail.com">
-            <svg class="w-[25px] fill-primary hover:fill-third duration-300" viewbox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M212.5 43.75H87.5C50 43.75 25 62.5 25 106.25V193.75C25 237.5 50 256.25 87.5 256.25H212.5C250 256.25 275 237.5 275 193.75V106.25C275 62.5 250 43.75 212.5 43.75ZM218.375 119.875L179.25 151.125C171 157.75 160.5 161 150 161C139.5 161 128.875 157.75 120.75 151.125L81.625 119.875C77.625 116.625 77 110.625 80.125 106.625C83.375 102.625 89.25 101.875 93.25 105.125L132.375 136.375C141.875 144 158 144 167.5 136.375L206.625 105.125C210.625 101.875 216.625 102.5 219.75 106.625C223 110.625 222.375 116.625 218.375 119.875Z"/>
-            </svg>
-        </a>
     </div>
 
-</div>
-<div class="bg-third container mx-auto mt-16 h-16 rounded-tl-[36px] rounded-tr-[36px] flex justify-center items-center">
-    <h1 class="font-medium text-primary">© 2022 ANXIETY</h1>
-</div></div><!-- JavaScript --><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script><script src="./src/js/owl.carousel.min.js"></script><script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script><script>
-$('.owl-carousel').owlCarousel({
-    loop: true,
-    margin: 10,
-    nav: true,
-    autoplay: true,
-    autoplayTimeout: 3000,
-    responsive: {
-        0: {
-            items: 1
-        },
-        600: {
-            items: 1
-        },
-        1000: {
-            items: 1
-        }
-    }
-})</script></body></html>
+    <!-- JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="./src/js/owl.carousel.min.js"></script>
+    <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            autoplay: true,
+            autoplayTimeout: 3000,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 1
+                },
+                1000: {
+                    items: 1
+                }
+            }
+        })
+    </script>
+</body>
+</html>
