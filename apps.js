@@ -1,5 +1,6 @@
 function navMenu(){
-    addEventListener.apply('click')
+    let navMenu = document.getElementById("nav-menu");
+    navMenu.style.right = "0px";
 }
 
 let PUstartup = document.getElementById("PUstartup");
