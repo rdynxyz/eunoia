@@ -5,6 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./dist/output.css" rel="stylesheet">
+    <!-- Lib -->
+    <link rel="stylesheet" href="./src/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./src/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <!--Font  -->
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap" rel="stylesheet" />
@@ -17,22 +22,31 @@
     <!-- Navbar -->
     <nav class="w-full px-8 bg-secondary h-[10vh] border-gray-200 dark:border-gray-700 flex z-[1000] fixed md:relative duration-1000">
         <div class="container flex flex-wrap justify-between items-center mx-auto h-full z-10 duration-1000">
-            <a href="#" class="flex items-center">
+            <a href="index.html" class="flex items-center">
                 <img src="./src/assets/images/eunoia/eunoia.png" class="mr-3 h-6 sm:h-10"/>
             </a>
-            <button type="button" class="inline-flex justify-center items-center ml-3 text-gray-400 rounded-lg md:hidden hover:text-gray-900 focus:outline-none focus:ring-2 p-2 focus:ring-third dark:text-gray-400 dark:hover:text-white duration-1000 transition-all" onclick="navMenu()">
-                <span class="sr-only">Open main menu</span>
-                <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+            <button type="button" class="inline-flex justify-center items-center ml-3 text-gray-400 rounded-lg md:hidden hover:text-gray-900  dark:text-gray-400 dark:hover:text-white duration-1000 transition-all ease-out" onclick="navMenu()">
+                
+                <svg id="list-default" class="w-6 h-6 fill-primary block duration-1000 transition-all ease-in-out" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M43.75 10.9453H6.25C5.39583 10.9453 4.6875 10.237 4.6875 9.38281C4.6875 8.52865 5.39583 7.82031 6.25 7.82031H43.75C44.6042 7.82031 45.3125 8.52865 45.3125 9.38281C45.3125 10.237 44.6042 10.9453 43.75 10.9453Z"/>
+                    <path d="M43.75 21.3516H6.25C5.39583 21.3516 4.6875 20.6432 4.6875 19.7891C4.6875 18.9349 5.39583 18.2266 6.25 18.2266H43.75C44.6042 18.2266 45.3125 18.9349 45.3125 19.7891C45.3125 20.6432 44.6042 21.3516 43.75 21.3516Z"/>
+                    <path d="M43.75 31.7734H6.25C5.39583 31.7734 4.6875 31.0651 4.6875 30.2109C4.6875 29.3568 5.39583 28.6484 6.25 28.6484H43.75C44.6042 28.6484 45.3125 29.3568 45.3125 30.2109C45.3125 31.0651 44.6042 31.7734 43.75 31.7734Z"/>
+                    <path d="M43.75 42.1914H6.25C5.39583 42.1914 4.6875 41.4831 4.6875 40.6289C4.6875 39.7747 5.39583 39.0664 6.25 39.0664H43.75C44.6042 39.0664 45.3125 39.7747 45.3125 40.6289C45.3125 41.4831 44.6042 42.1914 43.75 42.1914Z"/>
                 </svg>
+                <svg id="list-active" class="w-6 h-6 fill-primary hidden duration-1000 transition-all ease-in-out" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M43.75 10.9375H6.25C5.39583 10.9375 4.6875 10.2292 4.6875 9.375C4.6875 8.52083 5.39583 7.8125 6.25 7.8125H43.75C44.6042 7.8125 45.3125 8.52083 45.3125 9.375C45.3125 10.2292 44.6042 10.9375 43.75 10.9375Z"/>
+                    <path d="M43.7487 21.3555H24.0195C23.1654 21.3555 22.457 20.6471 22.457 19.793C22.457 18.9388 23.1654 18.2305 24.0195 18.2305H43.7487C44.6029 18.2305 45.3112 18.9388 45.3112 19.793C45.3112 20.6471 44.6029 21.3555 43.7487 21.3555Z" />
+                    <path d="M43.75 31.7695H6.25C5.39583 31.7695 4.6875 31.0612 4.6875 30.207C4.6875 29.3529 5.39583 28.6445 6.25 28.6445H43.75C44.6042 28.6445 45.3125 29.3529 45.3125 30.207C45.3125 31.0612 44.6042 31.7695 43.75 31.7695Z" />
+                    <path d="M43.7487 42.1875H24.0195C23.1654 42.1875 22.457 41.4792 22.457 40.625C22.457 39.7708 23.1654 39.0625 24.0195 39.0625H43.7487C44.6029 39.0625 45.3112 39.7708 45.3112 40.625C45.3112 41.4792 44.6029 42.1875 43.7487 42.1875Z" />
+                </svg>
+                    
+
+                    
             </button>
-            <div class="absolute md:relative md:block bottom-0 top-[10vh] left-0 w-full md:w-auto md:top-auto md:bottom-auto duration-300 transition-all ease-in-out" id="mobile-menu">
-                <ul id="nav-menu" class="absolute md:relative duration-300 transition-all ease-in-out right-[-50rem] h-[90vh] md:h-[auto] flex flex-col p-4 mt-0 bg-secondary md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-normal md:border-0 z-[100] w-full md:w-auto md:right-auto">
+            <div class="absolute md:relative md:block bottom-0 top-[10vh] left-0 w-full md:w-auto md:top-auto md:bottom-auto duration-300 transition-all ease-in-out z-[1000]" id="mobile-menu">
+                <ul id="nav-menu" class="absolute md:relative duration-300 transition-all ease-in-out right-[-50rem] h-[90vh] md:h-[auto] flex flex-col p-4 mt-0 bg-secondary md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-normal md:border-0 z-[1000] w-full md:w-auto md:right-auto">
                     <li>
-                        <a href="index.html" class="block py-2 pr-4 pl-3 text-primary rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 dark:hover:bg-gray-700 hover:text-third md:dark:hover:bg-transparen duration-300">Home</a>
-                    </li>
-                    <li>
-                        <a href="index.html#about-section" class="block py-2 pr-4 pl-3 text-primary rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 dark:hover:bg-gray-700 hover:text-third md:dark:hover:bg-transparen duration-300">About</a>
+                        <a href="index.html#about-section" class="block py-2 pr-4 pl-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 dark:hover:bg-gray-700 hover:text-third md:dark:hover:bg-transparen duration-300">About</a>
                     </li>
                     <li>
                         <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="flex justify-between items-center py-2 pr-4 pl-3 w-full text-primary rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 hover:text-third md:p-0 md:w-auto dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent duration-300">
@@ -65,7 +79,7 @@
                         </div>
                     </li>
                     <li>
-                        <a href="portfolio.html" class="block py-2 pr-4 pl-3 text-primary rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 dark:hover:bg-gray-700 hover:text-third md:dark:hover:bg-transparen duration-300">Portfolio</a>
+                        <a href="portfolio.html" class="block py-2 pr-4 pl-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 dark:hover:bg-gray-700 hover:text-third md:dark:hover:bg-transparen duration-300">Portfolio</a>
                     </li>
                     <li>
                         <a href="contact.html" class="block py-2 pr-4 pl-3 text-third rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 dark:hover:bg-gray-700 hover:text-third md:dark:hover:bg-transparen duration-300">Contact</a>

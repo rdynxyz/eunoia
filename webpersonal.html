@@ -1,104 +1,105 @@
 <!doctype html>
-<html  class="scroll-smooth">
+<html class="scroll-smooth">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./dist/output.css" rel="stylesheet">
-     <!-- Lib -->
-     <link rel="stylesheet" href="./src/css/owl.carousel.min.css">
-     <link rel="stylesheet" href="./src/css/owl.theme.default.min.css">
-     <link rel="stylesheet" href="./src/css/style.css">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-    <!--Font  -->
-    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@600&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Volkhov:wght@700&display=swap" rel="stylesheet" />
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link
+        href="./dist/output.css" rel="stylesheet">
+        <!-- Lib -->
+        <link rel="stylesheet" href="./src/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="./src/css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="./src/css/style.css">
+        <link
+        rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+        <!--Font  -->
+        <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css2?family=Lora:wght@600&display=swap" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css2?family=Volkhov:wght@700&display=swap" rel="stylesheet"/>
+    </head>
 
-<body class="bg-primary text-secondary font-poppins font-normal text-base">
-    <!-- Navbar -->
-    <nav class="w-full px-8 bg-secondary h-[10vh] border-gray-200 dark:border-gray-700 flex z-[1000] fixed md:relative duration-1000">
-        <div class="container flex flex-wrap justify-between items-center mx-auto h-full z-10 duration-1000">
-            <a href="index.html" class="flex items-center">
-                <img src="./src/assets/images/eunoia/eunoia.png" class="mr-3 h-6 sm:h-10"/>
-            </a>
-            <button type="button" class="inline-flex justify-center items-center ml-3 text-gray-400 rounded-lg md:hidden hover:text-gray-900  dark:text-gray-400 dark:hover:text-white duration-1000 transition-all ease-out" onclick="navMenu()">
-                
-                <svg id="list-default" class="w-6 h-6 fill-primary block duration-1000 transition-all ease-in-out" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M43.75 10.9453H6.25C5.39583 10.9453 4.6875 10.237 4.6875 9.38281C4.6875 8.52865 5.39583 7.82031 6.25 7.82031H43.75C44.6042 7.82031 45.3125 8.52865 45.3125 9.38281C45.3125 10.237 44.6042 10.9453 43.75 10.9453Z"/>
-                    <path d="M43.75 21.3516H6.25C5.39583 21.3516 4.6875 20.6432 4.6875 19.7891C4.6875 18.9349 5.39583 18.2266 6.25 18.2266H43.75C44.6042 18.2266 45.3125 18.9349 45.3125 19.7891C45.3125 20.6432 44.6042 21.3516 43.75 21.3516Z"/>
-                    <path d="M43.75 31.7734H6.25C5.39583 31.7734 4.6875 31.0651 4.6875 30.2109C4.6875 29.3568 5.39583 28.6484 6.25 28.6484H43.75C44.6042 28.6484 45.3125 29.3568 45.3125 30.2109C45.3125 31.0651 44.6042 31.7734 43.75 31.7734Z"/>
-                    <path d="M43.75 42.1914H6.25C5.39583 42.1914 4.6875 41.4831 4.6875 40.6289C4.6875 39.7747 5.39583 39.0664 6.25 39.0664H43.75C44.6042 39.0664 45.3125 39.7747 45.3125 40.6289C45.3125 41.4831 44.6042 42.1914 43.75 42.1914Z"/>
-                </svg>
-                <svg id="list-active" class="w-6 h-6 fill-primary hidden duration-1000 transition-all ease-in-out" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M43.75 10.9375H6.25C5.39583 10.9375 4.6875 10.2292 4.6875 9.375C4.6875 8.52083 5.39583 7.8125 6.25 7.8125H43.75C44.6042 7.8125 45.3125 8.52083 45.3125 9.375C45.3125 10.2292 44.6042 10.9375 43.75 10.9375Z"/>
-                    <path d="M43.7487 21.3555H24.0195C23.1654 21.3555 22.457 20.6471 22.457 19.793C22.457 18.9388 23.1654 18.2305 24.0195 18.2305H43.7487C44.6029 18.2305 45.3112 18.9388 45.3112 19.793C45.3112 20.6471 44.6029 21.3555 43.7487 21.3555Z" />
-                    <path d="M43.75 31.7695H6.25C5.39583 31.7695 4.6875 31.0612 4.6875 30.207C4.6875 29.3529 5.39583 28.6445 6.25 28.6445H43.75C44.6042 28.6445 45.3125 29.3529 45.3125 30.207C45.3125 31.0612 44.6042 31.7695 43.75 31.7695Z" />
-                    <path d="M43.7487 42.1875H24.0195C23.1654 42.1875 22.457 41.4792 22.457 40.625C22.457 39.7708 23.1654 39.0625 24.0195 39.0625H43.7487C44.6029 39.0625 45.3112 39.7708 45.3112 40.625C45.3112 41.4792 44.6029 42.1875 43.7487 42.1875Z" />
-                </svg>
-                    
+    <body
+        class="bg-primary text-secondary font-poppins font-normal text-base">
+        <!-- Navbar -->
+        <nav class="w-full px-8 bg-secondary h-[10vh] border-gray-200 dark:border-gray-700 flex z-[1000] fixed md:relative duration-1000">
+            <div class="container flex flex-wrap justify-between items-center mx-auto h-full z-10 duration-1000">
+                <a href="index.html" class="flex items-center">
+                    <img src="./src/assets/images/eunoia/eunoia.png" class="mr-3 h-6 sm:h-10"/>
+                </a>
+                <button type="button" class="inline-flex justify-center items-center ml-3 text-gray-400 rounded-lg md:hidden hover:text-gray-900  dark:text-gray-400 dark:hover:text-white duration-1000 transition-all ease-out" onclick="navMenu()">
 
-                    
-            </button>
-            <div class="absolute md:relative md:block bottom-0 top-[10vh] left-0 w-full md:w-auto md:top-auto md:bottom-auto duration-300 transition-all ease-in-out z-[1000]" id="mobile-menu">
-                <ul id="nav-menu" class="absolute md:relative duration-300 transition-all ease-in-out right-[-50rem] h-[90vh] md:h-[auto] flex flex-col p-4 mt-0 bg-secondary md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-normal md:border-0 z-[1000] w-full md:w-auto md:right-auto">
-                    <li>
-                        <a href="index.html#about-section" class="block py-2 pr-4 pl-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 dark:hover:bg-gray-700 hover:text-third md:dark:hover:bg-transparen duration-300">About</a>
-                    </li>
-                    <li>
-                        <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="flex justify-between items-center py-2 pr-4 pl-3 w-full text-third rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 hover:text-third md:p-0 md:w-auto dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent duration-300">
-                            Services
-                            <svg class="ml-1 w-5 h-5" aria-hidden="true" fill="currentColor" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
-                            </svg>
-                        </button>
+                    <svg id="list-default" class="w-6 h-6 fill-primary block duration-1000 transition-all ease-in-out" viewbox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M43.75 10.9453H6.25C5.39583 10.9453 4.6875 10.237 4.6875 9.38281C4.6875 8.52865 5.39583 7.82031 6.25 7.82031H43.75C44.6042 7.82031 45.3125 8.52865 45.3125 9.38281C45.3125 10.237 44.6042 10.9453 43.75 10.9453Z"/>
+                        <path d="M43.75 21.3516H6.25C5.39583 21.3516 4.6875 20.6432 4.6875 19.7891C4.6875 18.9349 5.39583 18.2266 6.25 18.2266H43.75C44.6042 18.2266 45.3125 18.9349 45.3125 19.7891C45.3125 20.6432 44.6042 21.3516 43.75 21.3516Z"/>
+                        <path d="M43.75 31.7734H6.25C5.39583 31.7734 4.6875 31.0651 4.6875 30.2109C4.6875 29.3568 5.39583 28.6484 6.25 28.6484H43.75C44.6042 28.6484 45.3125 29.3568 45.3125 30.2109C45.3125 31.0651 44.6042 31.7734 43.75 31.7734Z"/>
+                        <path d="M43.75 42.1914H6.25C5.39583 42.1914 4.6875 41.4831 4.6875 40.6289C4.6875 39.7747 5.39583 39.0664 6.25 39.0664H43.75C44.6042 39.0664 45.3125 39.7747 45.3125 40.6289C45.3125 41.4831 44.6042 42.1914 43.75 42.1914Z"/>
+                    </svg>
+                    <svg id="list-active" class="w-6 h-6 fill-primary hidden duration-1000 transition-all ease-in-out" viewbox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M43.75 10.9375H6.25C5.39583 10.9375 4.6875 10.2292 4.6875 9.375C4.6875 8.52083 5.39583 7.8125 6.25 7.8125H43.75C44.6042 7.8125 45.3125 8.52083 45.3125 9.375C45.3125 10.2292 44.6042 10.9375 43.75 10.9375Z"/>
+                        <path d="M43.7487 21.3555H24.0195C23.1654 21.3555 22.457 20.6471 22.457 19.793C22.457 18.9388 23.1654 18.2305 24.0195 18.2305H43.7487C44.6029 18.2305 45.3112 18.9388 45.3112 19.793C45.3112 20.6471 44.6029 21.3555 43.7487 21.3555Z"/>
+                        <path d="M43.75 31.7695H6.25C5.39583 31.7695 4.6875 31.0612 4.6875 30.207C4.6875 29.3529 5.39583 28.6445 6.25 28.6445H43.75C44.6042 28.6445 45.3125 29.3529 45.3125 30.207C45.3125 31.0612 44.6042 31.7695 43.75 31.7695Z"/>
+                        <path d="M43.7487 42.1875H24.0195C23.1654 42.1875 22.457 41.4792 22.457 40.625C22.457 39.7708 23.1654 39.0625 24.0195 39.0625H43.7487C44.6029 39.0625 45.3112 39.7708 45.3112 40.625C45.3112 41.4792 44.6029 42.1875 43.7487 42.1875Z"/>
+                    </svg>
 
-                        <div id="dropdownNavbar" class="hidden z-10 w-44 font-normal bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700 dark:divide-gray-600" data-popper-reference-hidden="" data-popper-escaped="" data-popper-placement="bottom" style="
-                                                  position: absolute;
-                                                  inset: 0px auto auto 0px;
-                                                  margin: 0px;
-                                                  transform: translate(0px, 485px);
-                                                ">
-                            <ul class="py-1 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
-                                <li>
-                                    <a href="webperusahaan.html" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Web Perusahaan</a>
-                                </li>
-                                <li>
-                                    <a href="webtokoonline.html" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Web Toko Online</a>
-                                </li>
-                                <li>
-                                    <a href="webpersonal.html" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Web Personal</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="portfolio.html" class="block py-2 pr-4 pl-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 dark:hover:bg-gray-700 hover:text-third md:dark:hover:bg-transparen duration-300">Portfolio</a>
-                    </li>
-                    <li>
-                        <a href="contact.html" class="block py-2 pr-4 pl-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 dark:hover:bg-gray-700 hover:text-third md:dark:hover:bg-transparen duration-300">Contact</a>
-                    </li>
-                </ul>
+                </button>
+                <div class="absolute md:relative md:block bottom-0 top-[10vh] left-0 w-full md:w-auto md:top-auto md:bottom-auto duration-300 transition-all ease-in-out z-[1000]" id="mobile-menu">
+                    <ul id="nav-menu" class="absolute md:relative duration-300 transition-all ease-in-out right-[-50rem] h-[90vh] md:h-[auto] flex flex-col p-4 mt-0 bg-secondary md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-normal md:border-0 z-[1000] w-full md:w-auto md:right-auto">
+                        <li>
+                            <a href="index.html#about-section" class="block py-2 pr-4 pl-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 dark:hover:bg-gray-700 hover:text-third md:dark:hover:bg-transparen duration-300">About</a>
+                        </li>
+                        <li>
+                            <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="flex justify-between items-center py-2 pr-4 pl-3 w-full text-third rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 hover:text-third md:p-0 md:w-auto dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent duration-300">
+                                Services
+                                <svg class="ml-1 w-5 h-5" aria-hidden="true" fill="currentColor" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                                </svg>
+                            </button>
+
+                            <div id="dropdownNavbar" class="hidden z-10 w-44 font-normal bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700 dark:divide-gray-600" data-popper-reference-hidden="" data-popper-escaped="" data-popper-placement="bottom" style="
+                                                                                                                                                                                                                                      position: absolute;
+                                                                                                                                                                                                                                      inset: 0px auto auto 0px;
+                                                                                                                                                                                                                                      margin: 0px;
+                                                                                                                                                                                                                                      transform: translate(0px, 485px);
+                                                                                                                                                                                                                                    ">
+                                <ul class="py-1 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
+                                    <li>
+                                        <a href="webperusahaan.html" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Web Perusahaan</a>
+                                    </li>
+                                    <li>
+                                        <a href="webtokoonline.html" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Web Toko Online</a>
+                                    </li>
+                                    <li>
+                                        <a href="webpersonal.html" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Web Personal</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="portfolio.html" class="block py-2 pr-4 pl-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 dark:hover:bg-gray-700 hover:text-third md:dark:hover:bg-transparen duration-300">Portfolio</a>
+                        </li>
+                        <li>
+                            <a href="contact.html" class="block py-2 pr-4 pl-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 dark:hover:bg-gray-700 hover:text-third md:dark:hover:bg-transparen duration-300">Contact</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
 
         <!--  -->
         <div class="bg-secondary z-0 w-full flex flex-col mx-auto pt-[10vh] sm:pt-0 px-4 sm:h-[500px] sm:mt-0 sm:flex-row sm:px4">
             <div class="container mx-auto flex-col flex sm:flex-row h-full">
                 <div class="w-full sm:w-1/2 h-1/2 flex flex-col justify-end  mx-auto px-6 sm:h-full sm:justify-center sm:items-start z-0 text-primary">
                     <div>
-                        <h1 class="mt-16 sm:mt-0 text-4xl sm:text-5xl font-bold mx-auto">Miliki Sekarang</h1>
-                        <h1 class="text-4xl sm:text-5xl font-bold mx-auto text-third">Web Company Profile</h1>
+                        <h1 class="mt-16 sm:mt-0 text-4xl sm:text-5xl font-bold mx-auto">Yuk Buat</h1>
+                        <h1 class="text-4xl sm:text-5xl font-bold mx-auto text-third">Web Personal</h1>
 
                     </div>
-                    <p class=" mt-4">Belum memiliki website yang profesional untuk perusahaan Anda? Eunoia sudah melayani jasa pembuatan website perusahaan lebih dari 5 tahun kami sangat mengerti desain web yang sesuai untuk perusahaan Anda agar tampil lebih profesional.</p>
+                    <p class=" mt-4">Sampai saat ini belum memiliki website personal? Yuk buat personal website dan perluas jaringan Anda. Personal Website juga digunakan untuk personal branding agar Anda lebih banyak diketahui penjelajah internet.</p>
                 </div>
                 <div class="w-full sm:w-1/2 h-1/2 sm:h-full flex justify-center items-center p-8">
-                    <img src="./src/assets/images/services/company.png" class="w-3/4 sm:w-[400px]"/>
+                    <img src="./src/assets/images/services/Personal goals.png" class="w-3/4 sm:w-[400px]"/>
                 </div>
             </div>
         </div>
@@ -109,152 +110,89 @@
         <!--  -->
         <div class="bg-primary container mx-auto px-8 sm:px-4 flex flex-col items-center">
             <div class="w-full sm:w-[550px] text-center">
-                <h1 class=" mt-16 text-3xl font-bold mx-auto">Mengapa Perusahaan Anda Membutuhkan Website?</h1>
+                <h1 class=" mt-16 text-3xl font-bold mx-auto">Manfaat Website dalam Personal Branding.</h1>
             </div>
             <div class=" container mt-8">
-                <img src="./src/assets/images/pictures/internet.png" alt="" srcset="" class="mx-auto w-[860px]">
                 <div class="sm:w-[860px] container mx-auto ">
-                    <p class="mt-8">
-                        Dari survei yang di lakukan oleh APJII dalam waktu 2018 kemarin jumlah pengguna internet sudah mencapai lebih dari setengan penduduk indonesia, itu artinya hampir semua calon pelanggan Anda sudah melek internet dan hampir semua dari mereka mencari sesuatu di google atau di facebook sebagai raksasa internet saat ini.
+                    <p class="mt-">
+                        Berikut beberapa alasan penting kenapa Anda perlu memiliki website pribadi sebagai personal branding:
                     </p>
                     <p class="mt-4">
-                        Itulah alasan mengapa desain web yang menarik sangat penting untuk kelangsungan perusahaan Anda, dengan memiliki sebuah website Anda tidak hanya menjaring pelanggan di sekitar saja, karena sebuah web bisa berkerja dan di akses di seluruh dunia dalam waktu 24 Jam tanpa henti.
+                        <b> 1. Menumbuhkan Kepercayaan Orang Lain.</b><br>
+                        Dengan memiliki website akan membuat orang lain lebih mengenal Anda meskipun mereka belum pernah bertemu secara langsung dengan Anda. Hasilnya, rasa kepercayaan mereka mulai tumbuh, karena sudah mengenal Anda.
                     </p>
                     <p class="mt-4">
-                        Namun untuk mencari jasa web design yang bagus, profesional dan murah cukup sulit, karena kebanyakan jasa web design hanya membuat web asal jadi, tidak memperhitungkan hal-hal yang sangat kursial seperti layout, warna, bahkan gambar yang di gunakan, ini akan sangat fatal akibanya.
+                        <b> 2. Meningkatkan Keahlian yang Anda miliki.</b>
+                        <br>
+                        Apakah Anda seorang guru, pelajar, pekerja, atau seorang pemuda yang masih mencari jati diri sendiri? Apapun itu profesi Anda, pastinya memiliki keahlian tertentu dan keinginan kuat yang terpendam dalam hati. 
+                        Apabila memiliki website, keahlian Anda akan meningkat secara otomatis, karena Anda dituntut mempelajari, dan mendalami kembali, baru kemudian membagikan ilmunya kepada orang.
                     </p>
                     <p class="mt-4">
-                        Jika Anda mau membuat sendiri Anda perlu menguasai beberapa tehnik seperti sklil membuat website, Skil membuat copywriting, perlu mencari template yang sesuai dengan pasar dan bisnis Anda, dan berbagai hal lain yang cukup menyita waktu.
+                        <b>3. Membangun Rasa Percaya Diri.</b><br>
+                        Seseorang yang memiliki keahlian belum tentu percaya diri ketika akan memperkenalkannya kepada publik. Tapi beda halnya jika memiliki website. Anda bisa bebas menyampaikan wawasan, pengetahuan dan pengalaman dengan gayanya Anda sendiri. Dengan demikian, rasa percaya diri Anda akan meningkat.
+                    </p>
+                    <p class="mt-4 ">
+                        <b>4. Memperluas Jaringan Anda.</b> <br>
+                        Di era digital ini yang serba internet, website punya pengaruh besar terhadap koneksi, dan jaringan Anda.
+                        Jika pebisnis atau pedagang, Anda bisa dengan mudahnya memperbanyak calon konsumen dari berbagai daerah, dan orang lain lebih mudah mengenali Anda.
                     </p>
                     <p class="mt-4 font-bold">
-                        Inilah mengapa kami hadir memposisikan diri sebagai Jasa Pembuatan Website Company Profile Perusahaan, misi kami untuk membatu Anda memiliki sebuah website dengan desain yang menarik  dan terlihat profesional tanpa harus menyita waktu Anda untuk belajar segala hal di atas.
-                    </p>
-                    <p class="mt-4">
-                        Sampai saat ini kami sudah melayani ratusan client di seluruh indonesia  dengan mengedepankan brand Eunoia Anda bisa melihat portofolio kami
+                        Memiliki website personal sangat penting bukan? maka dari itu Eunoia membuka peluang bagi Anda yang ingin membangun personal branding dengan menggunakan Eunoia sebagai partner pengembangan website. Anda bisa melihat portofolio kami
                         <a href="portfolio.html" class="text-third font-bold">DISINI</a>.
                     </p>
                 </div>
             </div>
         </div>
 
-         <!-- Buat Website -->
-         <div class="bg-secondary container sm:w-[860px]  mx-auto mt-16 p-8 flex flex-col sm:flex-row rounded">
+        <!-- Buat Website -->
+        <div class="bg-secondary container sm:w-[860px]  mx-auto mt-16 p-8 flex flex-col sm:flex-row rounded">
             <div class="w-full sm:w-2/6 flex items-center justify-center">
-                <img src="./src/assets/images/services/perusahaan 2.png" class="w-[200px]">
+                <img src="./src/assets/images/services/persnoal.png" class="w-[200px]">
             </div>
             <div class=" w-full sm:w-4/6 flex flex-col  justify-center">
-                <h1 class="text-2xl font-bold text-primary mt-8 sm:mt-0">Jasa Pembuatan Website Profesional Terbaik Untuk Perusahaan Anda</h1>
-                <p class="text-primary mt-4">Bangun perusahaan Anda lebih menguntungkan dengan memiliki website compay profile profesional bersama jasa pembuatan website terbaik yang didukung hosting premium full akses. Lebih dari 500 bisnis telah mempercayakan pembuatan websitenya pada Eunoia.
+                <h1 class="text-2xl font-bold text-primary mt-8 sm:mt-0">Jasa Pembuatan Website Pribadi sebagai Personal Branding</h1>
+                <p class="text-primary mt-4">Perluas jaringan Anda di dunia maya dengan membuat Web Personal sebagai personal branding. Eunoia telah banyak membantu para individu yang ingin membangun brandingnya di internet.
                 </p>
             </div>
         </div>
-
-        <!-- Priselist -->
-        <div class="bg-primary container mx-auto px-4 flex flex-col items-center">
+         <!-- Priselist -->
+         <div class="bg-primary container mx-auto px-4 flex flex-col items-center">
             <div class="w-full sm:w-3/4 text-center">
-                <h1 class=" mt-16 text-3xl font-bold mx-auto">Harga Jasa Pembuatan Website Company Profile</h1>
-                <p class="text-center mt-4">Kami menawarkan harga Jasa Pembuatan Website Company Profile yang profesional dan berkualitas dengan harga sangat terjangkau, kami ingin membuktikan jika dengan harga yang sangat kecil Anda bisa memiliki sebuah web yang powerfull untuk menunjang kemajuan bisnis Anda..</p>
+                <h1 class=" mt-16 text-3xl font-bold mx-auto">Harga Jasa Pembuatan Website Personal</h1>
+                <p class="text-center mt-4">Kami menawarkan harga Jasa Pembuatan Website Personal yang profesional dan berkualitas dengan harga sangat terjangkau, kami ingin membuktikan jika dengan harga yang sangat kecil Anda bisa memiliki sebuah web yang powerfull untuk menunjang kemajuan branding Anda.</p>
             </div>
             <div class="b-red-500 container flex flex-col gap-4 lg:flex-row mt-16 justify-center items-center">
                 <div class="flex flex-col gap-4 sm:flex-row">
-                    <!-- Startup -->
+                    <!-- Web Personal -->
                     <div class="bg-white w-64 h-96 rounded-xl shadow-mainShadow">
                         <div class="bg-teal-600 h-12 w-full rounded-t-xl flex justify-center items-center text-primary text-lg font-medium">
-                            <h1>Termurah</h1>
+                            <h1>Web Personal</h1>
                         </div>
                         <div class="w-full p-4 h-44 justify-between b-yellow-400">
                             <div class="h-full flex flex-col items-center border-b-2 border-third gap-3">
-                                <h1 class="text-3xl font-bold">Startup</h1>
-                                <h1 class="line-through">Rp2.700.000,00</h1>
-                                <h1 class="text-third text-2xl font-bold">Rp1.490.000,00</h1>
+                                <h1 class="text-3xl font-bold">Mulai dari</h1>
+                                <h1 >Rp500.000,00 -</h1>
+                                <h1 class="text-third text-2xl font-bold">Rp1.500.000,00</h1>
                             </div>
                         </div>
                         <div class="w-full h-40 b-blue-400 px-4 pb-4 flex flex-col items-center gap-4">
                             <button type="button" class=" text-primary border-2 border-third bg-third white hover:bg-transparent hover:border-third hover:text-third focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded text-base px-5 py-2.5 text-center dark:focus:ring-blue-800 duration-300 w-full" onclick="location.href='https://wa.me/628993425805'">
                                 Order Sekarang
                             </button>
-                            <p class="text-xs">Disarankan untuk UMKM</p>
+                            <p class="text-xs">Mari bangun personal branding</p>
                             <button type="button" class=" text-secondary bg-slate-200 white hover:bg-slate-300 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded text-sm px-5 py-2 text-center dark:focus:ring-blue-800 duration-300 w-full" onclick="CPstartup()">
                                 Detail Fitur
                             </button>
                         </div>
                     </div>
-                    <!-- Business -->
-                    <div class="bg-white w-64 h-96 rounded-xl shadow-mainShadow">
-                        <div class="bg-yellow-500 h-12 w-full rounded-t-xl flex justify-center items-center text-primary text-lg font-medium">
-                            <h1>Discount up to 26%</h1>                    
-                        </div>
-                        <div class="w-full p-4 h-44 justify-between b-yellow-400">
-                            <div class="h-full flex flex-col items-center border-b-2 border-third gap-3">
-                                <h1 class="text-3xl font-bold">Business</h1>
-                                <h1 class="line-through">Rp4.000.000,00</h1>
-                                <h1 class="text-third text-2xl font-bold">Rp2.990.000,00</h1>
-                            </div>
-                        </div>
-                        <div class="w-full h-40 b-blue-400 px-4 pb-4 flex flex-col items-center gap-4">
-                            <button type="button" class=" text-primary border-2 border-third bg-third white hover:bg-transparent hover:border-third hover:text-third focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded text-base px-5 py-2.5 text-center dark:focus:ring-blue-800 duration-300 w-full" onclick="location.href='https://wa.me/628993425805'">
-                                Order Sekarang
-                            </button>
-                            <p class="text-xs">Disarankan untuk Perusahaan Kecil</p>
-                            <button type="button" class=" text-secondary bg-slate-200 white hover:bg-slate-300 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded text-sm px-5 py-2 text-center dark:focus:ring-blue-800 duration-300 w-full" onclick="CPbusiness()">
-                                Detail Fitur
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="flex flex-col sm:flex-row gap-4">
-                    <!-- BizExtra -->
-                    <div class="bg-white w-64 h-96 rounded-xl shadow-mainShadow">
-                        <div class="bg-orange-600 h-12 w-full rounded-t-xl flex justify-center items-center text-primary text-lg font-medium">
-                            <h1>Discount up to 45%</h1>
-                        </div>
-                        <div class="w-full p-4 h-44 justify-between b-yellow-400">
-                            <div class="h-full flex flex-col items-center border-b-2 border-third gap-3">
-                                <h1 class="text-3xl font-bold">BizExtra</h1>
-                                <h1 class="line-through">Rp6.350.000,00</h1>
-                                <h1 class="text-third text-2xl font-bold">Rp3.490.000,00</h1>
-                            </div>
-                        </div>
-                        <div class="w-full h-40 b-blue-400 px-4 pb-4 flex flex-col items-center gap-4">
-                            <button type="button" class=" text-primary border-2 border-third bg-third white hover:bg-transparent hover:border-third hover:text-third focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded text-base px-5 py-2.5 text-center dark:focus:ring-blue-800 duration-300 w-full" onclick="location.href='https://wa.me/628993425805'">
-                                Order Sekarang
-                            </button>
-                            <p class="text-xs">Disarankan untuk Corporate</p>
-                            <button type="button" class=" text-secondary bg-slate-200 white hover:bg-slate-300 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded text-sm px-5 py-2 text-center dark:focus:ring-blue-800 duration-300 w-full " onclick="CPbiz()">
-                                Detail Fitur
-                            </button>
-                        </div>
-                    </div>
-                    <!-- Enterprise -->
-                    <div class="bg-white w-64 h-96 rounded-xl shadow-mainShadow">
-                        <div class="bg-rose-600 h-12 w-full rounded-t-xl flex justify-center items-center text-primary text-lg font-medium">
-                            <h1>Discount up to 35%</h1>
-                        </div>
-                        <div class="w-full p-4 h-44 justify-between b-yellow-400">
-                            <div class="h-full flex flex-col items-center border-b-2 border-third gap-3">
-                                <h1 class="text-3xl font-bold">Enterprise</h1>
-                                <h1 class="line-through">Rp8.400.000,00</h1>
-                                <h1 class="text-third text-2xl font-bold">Rp5.490.000,00</h1>
-                            </div>
-                        </div>
-                        <div class="w-full h-40 b-blue-400 px-4 pb-4 flex flex-col items-center gap-4">
-                            <button type="button" class=" text-primary border-2 border-third bg-third white hover:bg-transparent hover:border-third hover:text-third focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded text-base px-5 py-2.5 text-center dark:focus:ring-blue-800 duration-300 w-full" onclick="location.href='https://wa.me/628993425805'">
-                                Order Sekarang
-                            </button>
-                            <p class="text-xs">Disarankan untuk Traffic Besar</p>
-                            <button type="button" class=" text-secondary bg-slate-200 white hover:bg-slate-300 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded text-sm px-5 py-2 text-center dark:focus:ring-blue-800 duration-300 w-full" onclick="CPenterprise()">
-                                Detail Fitur
-                            </button>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
 
-        <!-- PU Startup -->
+        <!-- PU Personal Web -->
         <div id="PUstartup" class="bg-white mt-[10vh] h-auto sm:mt-0 p-4 container fixed top-0 right-0 bottom-0 left-0 m-auto rounded-2xl hidden">
             <div class="border-secondary border-b-[1px]">
-                <h1 class="text-center p-4 text-lg font-bold">Fitur Paket Startup</h1>
+                <h1 class="text-center p-4 text-lg font-bold">Fitur Web Personal</h1>
                 <div class="top-0 right-0 bottom-0 lef-0 w-20 h-20 flex absolute z-40 mr-0">
                     <a class="m-auto"><i class="fa-solid fa-xmark text-4xl cursor-pointer hover:text-third" onclick="closePU()"></i></a>
                 </div>
@@ -277,106 +215,6 @@
                     <li>Backup 1x/bulan</li>
                     <li>Support</li>
                     <li>Biaya Perpanjang Tahun Selanjutnya Hanya Rp 690.000,-</li>
-            </div>
-        </div>
-        <!-- PU Business -->
-        <div id="PUbusiness" class="bg-white mt-[10vh] h-auto sm:mt-0 p-4 container fixed top-0 right-0 bottom-0 left-0 m-auto rounded-2xl hidden">
-            <div class="border-secondary border-b-[1px]">
-                <h1 class="text-center p-4 text-lg font-bold">Fitur Paket Business</h1>
-                <div class="top-0 right-0 bottom-0 lef-0 w-20 h-20 flex absolute z-40 mr-0">
-                    <a class="m-auto"><i class="fa-solid fa-xmark text-4xl cursor-pointer hover:text-third" onclick="closeBusiness()"></i></a>
-                </div>
-            </div>
-            <div class="p-4">
-                <li>9 Design Page</li>
-                <li>10x Free Revision</li>
-                <li>10 Banner Design</li>
-                <li>1 Logo Design (Basic)</li>
-                <li>Free Domain</li>
-                <li>6 GB Cloud Hosting Space</li>
-                <li>15.000 visitors/month</li>
-                <li>SSL Security</li>
-                <li>6 Email domain</li>
-                <li>Akses Full</li>
-                <li>Form Submitted</li>
-                <li>Live Chat</li>
-                <li>Web Statistik</li>
-                <li>Submit Search Engine Google</li>
-                <li>SEO basic</li>
-                <li>Basic image editing</li>
-                <li>Free Mini Update</li>
-                <li>Backup 1x/bulan</li>
-                <li>Support</li>
-                <li>Biaya Perpanjang Tahun Selanjutnya Hanya Rp990,000,-</li>
-
-            </div>
-        </div>
-        <!-- BizExtra -->
-        <div id="PUbiz" class="bg-white mt-[10vh] h-auto sm:mt-0 p-4 container fixed top-0 right-0 bottom-0 left-0 m-auto rounded-2xl hidden">
-            <div class="border-secondary border-b-[1px]">
-                <h1 class="text-center p-4 text-lg font-bold">Fitur Paket BizExtra</h1>
-                <div class="top-0 right-0 bottom-0 lef-0 w-20 h-20 flex absolute z-40 mr-0">
-                    <a class="m-auto"><i class="fa-solid fa-xmark text-4xl cursor-pointer hover:text-third" onclick="closeBiz()"></i></a>
-                </div>
-            </div>
-            <div class="p-4">
-                <li>20 Design Page</li>
-                <li>20x Free Revision</li>
-                <li>20 Banner Design</li>
-                <li>1 Logo Design (Basic)</li>
-                <li>Free Domain</li>
-                <li>8 GB Hosting Space</li>
-                <li>25.000 visitors/month</li>
-                <li>SSL Security</li>
-                <li>8 Email domain</li>
-                <li>Akses Full</li>
-                <li>Form Submitted</li>
-                <li>Live Chat</li>
-                <li>Web Statistik</li>
-                <li>Submit Search Engine Google</li>
-                <li>Free Google My Business</li>
-                <li>SEO basic</li>
-                <li>Setting Google Analytics</li>
-                <li>Setting Google Tag</li>
-                <li>Setting Facebook Pixel</li>
-                <li>Basic image editing</li>
-                <li>Free Mini Update</li>
-                <li>Backup 2x/bulan</li>
-                <li>Biaya Perpanjang Tahun Selanjutnya Hanya Rp 1.290.000,-</li>
-            </div>
-        </div>
-        <!-- Enterprise -->
-        <div id="PUenterprise" class="bg-white mt-[10vh] h-auto sm:mt-0 p-4 container fixed top-0 right-0 bottom-0 left-0 m-auto rounded-2xl hidden">
-            <div class="border-secondary border-b-[1px]">
-                <h1 class="text-center p-4 text-lg font-bold">Fitur Paket Enterprise</h1>
-                <div class="top-0 right-0 bottom-0 lef-0 w-20 h-20 flex absolute z-40 mr-0">
-                    <a class="m-auto"><i class="fa-solid fa-xmark text-4xl cursor-pointer hover:text-third" onclick="closeEnterprise()"></i></a>
-                </div>
-            </div>
-            <div class="p-4">
-                <li>30 Design Page</li>
-                <li>30x Free Revision</li>
-                <li>30 Banner Design</li>
-                <li>1 Logo Design (Basic)</li>
-                <li>Free Domain</li>
-                <li>10 GB Hosting Space</li>
-                <li>50.000 visitors/month</li>
-                <li>SSL Security</li>
-                <li>10 Email domain</li>
-                <li>Akses Full</li>
-                <li>Form Submitted</li>
-                <li>Live Chat</li>
-                <li>Web Statistik</li>
-                <li>Submit Search Engine Google</li>
-                <li>Free Google My Business</li>
-                <li>SEO basic</li>
-                <li>Setting Google Analytics</li>
-                <li>Setting Google Tag</li>
-                <li>Basic image editing</li>
-                <li>Free Mini Update</li>
-                <li>Backup 3x/bulan</li>
-                <li>Lifetime Free Maintenance & Support</li>
-                <li>Biaya Perpanjang Tahun Selanjutnya Hanya Rp 1.990.000,-</li>
             </div>
         </div>
 
@@ -660,6 +498,6 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
         <script src="./src/js/owl.carousel.min.js"></script>
         <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
-        
+
     </body>
 </html>

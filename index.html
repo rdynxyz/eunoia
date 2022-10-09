@@ -5,26 +5,26 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <link
         href="./dist/output.css" rel="stylesheet"/>
+        <!-- Lib -->
+        <link rel="stylesheet" href="./src/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="./src/css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="./src/css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
         <!--Font  -->
         <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet"/>
         <link href="https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap" rel="stylesheet"/>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet"/>
         <link href="https://fonts.googleapis.com/css2?family=Lora:wght@600&display=swap" rel="stylesheet"/>
         <link href="https://fonts.googleapis.com/css2?family=Volkhov:wght@700&display=swap" rel="stylesheet"/>
-        <link rel="stylesheet" href="./src/css/owl.carousel.min.css"/>
-        <link rel="stylesheet" href="./src/css/owl.theme.default.min.css"/>
-        <link rel="stylesheet" href="./src/css/style.css"/>
-    </head>
-
     <body
         class="bg-primary text-secondary font-poppins font-normal text-base">
         <!-- Navbar -->
         <nav class="w-full px-8 bg-secondary h-[10vh] border-gray-200 dark:border-gray-700 flex z-[1000] fixed md:relative duration-1000">
             <div class="container flex flex-wrap justify-between items-center mx-auto h-full z-10 duration-1000">
-                <a href="#" class="flex items-center">
+                <a href="index.html" class="flex items-center">
                     <img src="./src/assets/images/eunoia/eunoia.png" class="mr-3 h-6 sm:h-10"/>
                 </a>
-                <button type="button" class="inline-flex justify-center items-center ml-3 text-gray-400 rounded-lg md:hidden hover:text-gray-900  dark:text-gray-400 dark:hover:text-white duration-1000 transition-all" onclick="navMenu()">
+                <button type="button" class="inline-flex justify-center items-center ml-3 text-gray-400 rounded-lg md:hidden hover:text-gray-900  dark:text-gray-400 dark:hover:text-white duration-1000 transition-all ease-out" onclick="navMenu()">
                     
                     <svg id="list-default" class="w-6 h-6 fill-primary block duration-1000 transition-all ease-in-out" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
                         <path d="M43.75 10.9453H6.25C5.39583 10.9453 4.6875 10.237 4.6875 9.38281C4.6875 8.52865 5.39583 7.82031 6.25 7.82031H43.75C44.6042 7.82031 45.3125 8.52865 45.3125 9.38281C45.3125 10.237 44.6042 10.9453 43.75 10.9453Z"/>
@@ -42,11 +42,8 @@
 
                         
                 </button>
-                <div class="absolute md:relative md:block bottom-0 top-[10vh] left-0 w-full md:w-auto md:top-auto md:bottom-auto duration-300 transition-all ease-in-out" id="mobile-menu">
-                    <ul id="nav-menu" class="absolute md:relative duration-300 transition-all ease-in-out right-[-50rem] h-[90vh] md:h-[auto] flex flex-col p-4 mt-0 bg-secondary md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-normal md:border-0 z-[100] w-full md:w-auto md:right-auto">
-                        <li>
-                            <a href="index.html" class="block py-2 pr-4 pl-3 text-third rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 dark:hover:bg-gray-700 hover:text-third md:dark:hover:bg-transparen duration-300">Home</a>
-                        </li>
+                <div class="absolute md:relative md:block bottom-0 top-[10vh] left-0 w-full md:w-auto md:top-auto md:bottom-auto duration-300 transition-all ease-in-out z-[1000]" id="mobile-menu">
+                    <ul id="nav-menu" class="absolute md:relative duration-300 transition-all ease-in-out right-[-50rem] h-[90vh] md:h-[auto] flex flex-col p-4 mt-0 bg-secondary md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-normal md:border-0 z-[1000] w-full md:w-auto md:right-auto">
                         <li>
                             <a href="index.html#about-section" class="block py-2 pr-4 pl-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 dark:hover:bg-gray-700 hover:text-third md:dark:hover:bg-transparen duration-300">About</a>
                         </li>
