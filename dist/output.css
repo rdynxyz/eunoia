@@ -741,10 +741,6 @@ video {
   margin-top: 2rem;
 }
 
-.mb-16 {
-  margin-bottom: 4rem;
-}
-
 .mt-\[10vh\] {
   margin-top: 10vh;
 }
@@ -911,10 +907,6 @@ video {
 
 .w-64 {
   width: 16rem;
-}
-
-.w-2\/4 {
-  width: 50%;
 }
 
 .transform {
@@ -1304,11 +1296,6 @@ video {
   line-height: 2rem;
 }
 
-.text-5xl {
-  font-size: 3rem;
-  line-height: 1;
-}
-
 .font-normal {
   font-weight: 400;
 }
@@ -1590,10 +1577,6 @@ video {
     width: 66.666667%;
   }
 
-  .sm\:w-\[\] {
-    width: ;
-  }
-
   .sm\:w-2\/6 {
     width: 33.333333%;
   }
@@ -1685,11 +1668,6 @@ video {
   .sm\:text-5xl {
     font-size: 3rem;
     line-height: 1;
-  }
-
-  .sm\:text-3xl {
-    font-size: 1.875rem;
-    line-height: 2.25rem;
   }
 }
 
