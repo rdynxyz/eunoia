@@ -1,6 +1,6 @@
 function navMenu() {
   let navMenu = document.getElementById("nav-menu");
-  navMenu.classList.toggle("right-[22rem]");
+  navMenu.classList.toggle("right-[50rem]");
   navMenu.classList.toggle("right-0");
 }
 
