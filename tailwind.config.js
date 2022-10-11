@@ -3,6 +3,9 @@ module.exports = {
   content: ["./*.{html,js}"],
   theme: {
     extend: {
+      backgroundImage: theme => ({
+        'home-page': "url('./src/assets/images/pictures/desktop2.jpg')",
+       }),
       boxShadow: {
         'mainShadow' : '10px 10px 39px -10px rgba(0,0,0,0.1)'
       },
