@@ -18,7 +18,8 @@ module.exports = {
         'rouge': ['Rouge Script', 'cursive'],
         'poppins': ['Poppins', 'sans-serif'],
         'lora' : ['Lora', 'cursive'],
-        'volkhov' : ['Volkhov', 'serif']
+        'volkhov' : ['Volkhov', 'serif'],
+        'montserrat' : ['Montserrat', 'sans-serif']
         },
     },
   },
