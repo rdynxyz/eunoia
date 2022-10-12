@@ -43,3 +43,52 @@ function CPenterprise() {
 function closeEnterprise() {
   PUenterprise.style.display = "none";
 }
+
+
+const companyProfile = document.getElementsByClassName("company-profile");
+const tokoJasa = document.getElementsByClassName("toko-jasa");
+const personal = document.getElementsByClassName("personal");
+
+const allBtn = document.getElementById("all-btn")
+allBtn.addEventListener('click', function onClick(){
+  allBtn.style.backgroundColor = "#7269E3";
+  companyBtn.style.backgroundColor = "transparent";
+  tokoBtn.style.backgroundColor = "transparent";
+  personalBtn.style.backgroundColor = "transparent";
+})
+
+const companyBtn = document.getElementById("company-btn")
+companyBtn.addEventListener('click', function onClick() {
+  // alert ("company");
+  companyBtn.style.backgroundColor = "#7269E3";
+  allBtn.style.backgroundColor = "transparent";
+  tokoBtn.style.backgroundColor = "transparent";
+  personalBtn.style.backgroundColor = "transparent";
+  companyProfile.style.display = "block";
+  tokoJasa.display = "none";
+  personal.display = "none";
+})
+
+const tokoBtn = document.getElementById("toko-btn")
+tokoBtn.addEventListener('click', function onClick() {
+  // alert ("toko");
+  tokoBtn.style.backgroundColor = "#7269E3";
+  allBtn.style.backgroundColor = "transparent";
+  companyBtn.style.backgroundColor = "transparent";
+  personalBtn.style.backgroundColor = "transparent";
+  companyProfile.style.display = "none";
+  tokoJasa.style.display = "block";
+  personal.style.display = "none";
+})
+
+const personalBtn = document.getElementById("personal-btn")
+personalBtn.addEventListener('click', function onClick(){
+  // alert ("personal");
+  personalBtn.style.backgroundColor = "#7269E3";
+  allBtn.style.backgroundColor = "transparent";
+  companyBtn.style.backgroundColor = "transparent";
+  tokoBtn.style.backgroundColor = "transparent";
+  companyProfile.style.display = "none";
+  tokoJasa.style.display = "none";
+  personal.style.display = "block";
+})

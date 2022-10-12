@@ -1,0 +1,71 @@
+<!-- PF -->
+        <div class="container mx-auto py-8 px-4">
+            <div class="w-[410px] h-12 rounded-lg bg-fourth mx-auto mb-8 text-primary flex items-center justify-center py-2  gap-2">
+                <a id="all-btn" class="bg-third py-1 px-3 rounded cursor-pointer">All</a>
+                <a id="company-btn" class="bg-thir  py-1 px-3 rounded cursor-pointer">Company Profile</a>
+                <a id="toko-btn" class="bg-thir  py-1 px-3 rounded cursor-pointer">Toko/Jasa</a>
+                <a id="personal-btn" class="bg-thir py-1 px-3 rounded cursor-pointer">Personal</a>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-6">
+                <div class="rounded-lg">
+                    <img src="./src/assets/images/portoflio/pf3c.jpg" id="company-profile">
+                </div>
+                <div class="rounded-lg">
+                    <img src="./src/assets/images/portoflio/pf1s.jpg" id="toko-jasa">
+                </div>
+                <div class="rounded-lg">
+                    <img src="./src/assets/images/portoflio/pf15p.jpg" id="personal">
+                </div>
+                <div class="rounded-lg">
+                    <img src="./src/assets/images/portoflio/pf2s.jpg" id="toko-jasa">
+                </div>
+                <div class="rounded-lg">
+                    <img src="./src/assets/images/portoflio/pf4s.jpg" id="toko-jasa">
+                </div>
+                <div class="rounded-lg">
+                    <img src="./src/assets/images/portoflio/pf5s.jpg" id="toko-jasa">
+                </div>
+                <div class="rounded-lg">
+                    <img src="./src/assets/images/portoflio/pf6s.jpg" id="toko-jasa">
+                </div>
+                <div class="rounded-lg">
+                    <img src="./src/assets/images/portoflio/pf7c.jpg" id="company-profile">
+                </div>
+                <div class="rounded-lg">
+                    <img src="./src/assets/images/portoflio/pf8s.jpg" id="toko-jasa">
+                </div>
+                <div class="rounded-lg">
+                    <img src="./src/assets/images/portoflio/pf9c.jpg" id="company-profile">
+                </div>
+                <div class="rounded-lg">
+                    <img src="./src/assets/images/portoflio/pf10s.jpg" id="toko-jasa">
+                </div>
+                <div class="rounded-lg">
+                    <img src="./src/assets/images/portoflio/pf11s.jpg" id="toko-jasa">
+                </div>
+                <div class="rounded-lg">
+                    <img src="./src/assets/images/portoflio/pf12s.jpg" id="toko-jasa">
+                </div>
+                <div class="rounded-lg">
+                    <img src="./src/assets/images/portoflio/pf13c.jpg" id="company-profile">
+                </div>
+                <div class="rounded-lg">
+                    <img src="./src/assets/images/portoflio/pf14s.jpg" id="toko-jasa">
+                </div>
+                <div class="rounded-lg">
+                    <img src="./src/assets/images/portoflio/pf16p.jpg" id="personal">
+                </div>
+                <div class="rounded-lg">
+                    <img src="./src/assets/images/portoflio/pf17s.jpg" id="toko-jasa">
+                </div>
+                <div class="rounded-lg">
+                    <img src="./src/assets/images/portoflio/pf18s.jpg" id="toko-jasa">
+                </div>
+                <div class="rounded-lg">
+                    <img src="./src/assets/images/portoflio/pf18s.jpg" id="toko-jasa">
+                </div>
+                <div class="rounded-lg">
+                    <img src="./src/assets/images/portoflio/pf20s.jpg" id="toko-jasa">
+                </div>
+            </div>
+        </div>
