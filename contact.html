@@ -11,17 +11,17 @@
     <link rel="stylesheet" href="./src/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <!--Font  -->
-    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@600&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Volkhov:wght@700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css2?family=Lora:wght@600&display=swap" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css2?family=Volkhov:wght@700&display=swap" rel="stylesheet"/>
 </head>
 
-<body class="bg-primary text-secondary font-poppins font-normal text-base">
+<body class="bg-secondary text-primary font-poppins font-normal text-base">
     <!-- Navbar -->
-    <nav class="w-full px-8 bg-secondary h-[10vh] border-gray-200 dark:border-gray-700 flex z-[1000] fixed md:relative duration-1000">
-        <div class="container flex flex-wrap justify-between items-center mx-auto h-full z-10 duration-1000">
+    <nav class=" w-full px-8 bg-secondary h-[10vh] border-gray-200 dark:border-gray-700 flex z-[1000] fixed md:relative duration-1000">
+        <div class="container flex flex-wrap justify-between items-center mx-auto h-full z-10 duration-1000 font-semibold uppercase font-montserrat">
             <a href="index.html" class="flex items-center">
                 <img src="./src/assets/images/eunoia/eunoia.png" class="mr-3 h-6 sm:h-10"/>
             </a>
@@ -40,49 +40,43 @@
                     <path d="M43.7487 42.1875H24.0195C23.1654 42.1875 22.457 41.4792 22.457 40.625C22.457 39.7708 23.1654 39.0625 24.0195 39.0625H43.7487C44.6029 39.0625 45.3112 39.7708 45.3112 40.625C45.3112 41.4792 44.6029 42.1875 43.7487 42.1875Z" />
                 </svg>
                     
-
-                    
             </button>
-            <div class="absolute md:relative md:block bottom-0 top-[10vh] left-0 w-full md:w-auto md:top-auto md:bottom-auto duration-300 transition-all ease-in-out z-[1000]" id="mobile-menu">
-                <ul id="nav-menu" class="absolute md:relative duration-300 transition-all ease-in-out right-[-50rem] h-[90vh] md:h-[auto] flex flex-col p-4 mt-0 bg-secondary md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-normal md:border-0 z-[1000] w-full md:w-auto md:right-auto">
+            <div class="absolute md:relative md:block bottom-0 top-[10vh] left-0 w-full md:w-auto md:top-auto md:bottom-auto duration-300 transition-all ease-in-out z-[1000] " id="mobile-menu">
+                <ul id="nav-menu" class="absolute md:relative duration-300 transition-all ease-in-out right-[-50rem] h-[90vh] md:h-[auto] flex flex-col p-4 mt-0 bg-secondary md:bg-transparent md:flex-row md:space-x-8 md:mt-0 md:text-sm md:border-0 z-[1000] w-full md:w-auto md:right-auto">
                     <li>
-                        <a href="index.html#about-section" class="block py-2 pr-4 pl-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 dark:hover:bg-gray-700 hover:text-third md:dark:hover:bg-transparen duration-300">About</a>
+                        <a href="index.html#about-section" class="block py-2 pr-4 pl-3 text-white rounded md:hover:bg-transparent md:border-0 md:p-0 hover:bg-gray-700 hover:text-third md:dark:hover:bg-transparen duration-300 md:before:h-[2px] before:duration-300 before:content-[''] before:absolute before:bg-third before:w-[0%] before:bottom-2 hover:before:w-[53px]">About</a>
                     </li>
                     <li>
-                        <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="flex justify-between items-center py-2 pr-4 pl-3 w-full text-primary rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 hover:text-third md:p-0 md:w-auto dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent duration-300">
+                        <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="flex justify-between items-center py-2 pr-4 pl-3 w-full text-primary rounded md:hover:bg-transparent md:border-0 hover:text-third md:p-0 md:w-auto dark:focus:text-white hover:bg-gray-700 md:dark:hover:bg-transparent duration-300 md:before:h-[2px] before:duration-300 before:content-[''] before:absolute before:bg-third before:w-[0%] before:bottom-2 hover:before:w-[92px] uppercase">
                             Services
                             <svg class="ml-1 w-5 h-5" aria-hidden="true" fill="currentColor" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
                             </svg>
                         </button>
-
-                        <div id="dropdownNavbar" class="hidden z-10 w-44 font-normal bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700 dark:divide-gray-600" data-popper-reference-hidden="" data-popper-escaped="" data-popper-placement="bottom" style="
+                        <div id="dropdownNavbar" class="hidden z-10 w-44 rounded divide-y shadow bg-gray-700 divide-gray-600 text-gray-400" data-popper-reference-hidden="" data-popper-escaped="" data-popper-placement="bottom" style="
                                                   position: absolute;
                                                   inset: 0px auto auto 0px;
                                                   margin: 0px;
                                                   transform: translate(0px, 485px);
                                                 ">
-                            <ul class="py-1 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
+                            <ul class="py-1 text-xs" aria-labelledby="dropdownLargeButton ">
                                 <li>
-                                    <a href="webperusahaan.html" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Web Perusahaan</a>
+                                    <a href="webperusahaan.html" class="block py-2 px-4 hover:text-third duration-300">Web Perusahaan</a>
                                 </li>
                                 <li>
-                                    <a href="webtokoonline.html" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Web Toko Online</a>
+                                    <a href="webtokoonline.html" class="block py-2 px-4 hover:text-third duration-300">Web Toko Online</a>
                                 </li>
                                 <li>
-                                    <a href="webpersonal.html" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Web Personal</a>
+                                    <a href="webpersonal.html" class="block py-2 px-4 hover:text-third duration-300">Web Personal</a>
                                 </li>
                             </ul>
-                            <!-- <div class="py-1">
-                                                            <a href="#" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white">Sign out</a>
-                                                        </div> -->
                         </div>
                     </li>
                     <li>
-                        <a href="portfolio.html" class="block py-2 pr-4 pl-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 dark:hover:bg-gray-700 hover:text-third md:dark:hover:bg-transparen duration-300">Portfolio</a>
+                        <a href="portfolio.html" class="block py-2 pr-4 pl-3 text-white rounded md:hover:bg-transparent md:border-0 md:p-0 hover:bg-gray-700 hover:text-third md:dark:hover:bg-transparen duration-300 md:before:h-[2px] before:duration-300 before:content-[''] before:absolute before:bg-third before:w-[0%] before:bottom-2 hover:before:w-[82px]">Portfolio</a>
                     </li>
                     <li>
-                        <a href="contact.html" class="block py-2 pr-4 pl-3 text-third rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 dark:hover:bg-gray-700 hover:text-third md:dark:hover:bg-transparen duration-300">Contact</a>
+                        <a href="contact.html" class="block py-2 pr-4 pl-3 text-third rounded md:hover:bg-transparent md:border-0 md:p-0 hover:bg-gray-700 hover:text-third md:dark:hover:bg-transparen duration-300 md:before:h-[2px] before:duration-300 before:content-[''] before:absolute before:bg-third before:w-[0%] before:bottom-2 hover:before:w-[70px]">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -95,11 +89,11 @@
             <h1 class="text-3xl font-volkhov mt-16 sm:mt-0">Kontak Kami</h1>
             <div class="w-full flex flex-col mt-6 sm:flex-row">
                 <div class="w-full p-0 sm:pr-12 pb-6 sm:w-1/2">
-                    <p class="sm:text-justify">Jika kamu memiliki pertanyaan atau kebutuhan, kami akan selalu dengan senang
+                    <p class="sm:text-justify">Jika Anda memiliki pertanyaan atau kebutuhan, kami akan selalu dengan senang
                         hati
                         membantu. Jangan ragu untuk menghubungi kami melalui telepon, email atau formulir yang ada. Kami
                         pasti akan
-                        menghubungimu sesegera mungkin.</p>
+                        menghubungi sesegera mungkin.</p>
                     <div class="b0 flex mt-6  h-[100px] border-b border-primary">
                         <div>
                             <a href=""
@@ -210,13 +204,13 @@
     </div>
 
     <!-- Buat Website -->
-    <div class="bg-secondary container sm:w-[860px]  mx-auto mt-16 p-8 flex flex-col sm:flex-row rounded">
+    <div class="bg-fourth container sm:w-[860px]  mx-auto mt-16 p-8 flex flex-col sm:flex-row rounded">
         <div class="w-full sm:w-2/6 flex items-center justify-center">
             <img src="./src/assets/images/services/freelance.png" class="w-[200px]">
         </div>
         <div class=" w-full sm:w-4/6 flex flex-col  justify-center">
             <h1 class="text-2xl font-bold text-primary mt-8 sm:mt-0">Ingin lebih dekat dengan Eunoia?</h1>
-            <p class="text-primary mt-4">Kami juga sering mengambil peluang freelance. Untuk kamu yang tertarik bekerjasama dalam pengerjaan project, silahkan hubungi kontak yang tersedia. Sampai jumpa!
+            <p class="text-primary mt-4">Kami juga sering mengambil peluang freelance. Untuk Anda yang tertarik bekerjasama dalam pengerjaan project, silahkan hubungi kontak yang tersedia. Sampai jumpa!
             </p>
         </div>
     </div>
@@ -226,7 +220,7 @@
         <h1 class=" mt-4">Stephen Curry</h1>
     </div>
         <!-- footer -->
-        <div class="bg-secondary z-0 w-full flex flex-col mx-auto px-4 h-auto sm:h-auto mt-16 sm:px4">
+        <div class="bg-fourth z-0 w-full flex flex-col mx-auto px-4 h-auto sm:h-auto mt-16 sm:px4">
             <div class="container mx-auto b-red-400 text-primary flex flex-col sm:flex-row py-8">
                 <div class="w-full sm:w-1/2">
                     <div class="p-4 rounded-lg text-primary">

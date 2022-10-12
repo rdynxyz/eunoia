@@ -10,11 +10,11 @@ module.exports = {
         'mainShadow' : '10px 10px 39px -10px rgba(0,0,0,0.1)'
       },
       colors: {
-        primary : "#f8f8f8",
+        primary : "#fdfdfd",
         // primary : "#f2f1f7",
         secondary : "#23282D",
         third : "#7269E3",
-        fourth : "#fefefe",
+        fourth : "#2e353b",
       },
       fontFamily: {
         'abril': ['Abril Fatface', 'cursive'],
