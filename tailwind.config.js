@@ -11,10 +11,10 @@ module.exports = {
       },
       colors: {
         primary : "#fdfdfd",
-        // primary : "#f2f1f7",
         secondary : "#23282D",
         third : "#7269E3",
         fourth : "#2e353b",
+        fift : "rgba(35,40,45,0.9)",
       },
       fontFamily: {
         'abril': ['Abril Fatface', 'cursive'],

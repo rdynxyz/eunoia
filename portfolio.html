@@ -18,7 +18,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Volkhov:wght@700&display=swap" rel="stylesheet"/>
 </head>
 
-<body class="bg-primary text-secondary font-poppins font-normal text-sm">
+<body class="bg-secondary text-secondary font-poppins font-normal text-sm">
     <!-- Navbar -->
     <nav class=" w-full px-8 bg-secondary h-[10vh] border-gray-200 dark:border-gray-700 flex z-[1000] fixed md:relative duration-1000">
         <div class="container flex flex-wrap justify-between items-center mx-auto h-full z-10 duration-1000 font-semibold uppercase font-montserrat">
@@ -96,13 +96,18 @@
         <!-- PF -->
         <div class="container mx-auto py-8 px-4">
             <div class="w-[370px] h-12 rounded-lg bg-fourth mx-auto mb-8 text-primary flex items-center justify-center py-2  gap-2">
-                <a id="all-btn" class="bg-third py-1 px-3 rounded cursor-pointer btn" >All</a>
-                <a id="company-btn" class="bg-thir py-1 px-3 rounded cursor-pointer btn">Company</a>
-                <a id="toko-btn" class="bg-thir py-1 px-3 rounded cursor-pointer btn" >Toko/Jasa</a>
-                <a id="personal-btn" class="bg-thir py-1 px-3 rounded cursor-pointer btn">Personal</a>
+                <a id="all-btn" class="bg-third py-2 px-3 rounded cursor-pointer btn" onclick="filterObjects('all')">All</a>
+                <a id="company-btn" class="bg-thir py-2 px-3 rounded cursor-pointer btn"  onclick="filterObjects('company-profile')">Company</a>
+                <a id="toko-btn" class="bg-thir py-2 px-3 rounded cursor-pointer btn"  onclick="filterObjects('toko-jasa')">Toko/Jasa</a>
+                <a id="personal-btn" class="bg-thir py-2 px-3 rounded cursor-pointer btn" onclick="filterObjects('personal')">Personal</a>
             </div>
             <div class="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-6">
-                <div class="box rounded-lg company-profile">
+                <div class="box group rounded-lg company-profile relative cursor-pointer">
+                    <!-- <div class="group-hover:opacity-100 absolute top-0 right-0 bottom-0 left-0 opacity-0 duration-200 bg-fift">
+                        <div class="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] text-center">
+                            <span class="text-primary text-xl">Pello - Company</span>
+                        </div>
+                    </div> -->
                     <img src="./src/assets/images/portoflio/pf3c.jpg" >
                 </div>
                 <div class="box rounded-lg toko-jasa">
@@ -167,7 +172,7 @@
 
     </div>
     <!-- footer -->
-    <div class="bg-fourth z-0 w-full flex flex-col mx-auto px-4 h-auto sm:h-auto  sm:px4">
+    <div class="bg-fourth z-0 w-full flex flex-col mx-auto px-4 h-auto sm:h-auto mt-16 sm:px4">
         <div class="container mx-auto b-red-400 text-primary flex flex-col sm:flex-row py-8">
             <div class="w-full sm:w-1/2">
                 <div class="p-4 rounded-lg text-primary">

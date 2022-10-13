@@ -4,3 +4,9 @@
 .owl-dots{
     display: none;
 }
+.box{
+    display: none;
+}
+.show{
+    display: block;
+}
