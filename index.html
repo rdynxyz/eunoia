@@ -45,7 +45,7 @@
                     <div class="absolute md:relative md:block bottom-0 top-[10vh] left-0 w-full md:w-auto md:top-auto md:bottom-auto duration-300 transition-all ease-in-out z-[1000] " id="mobile-menu">
                         <ul id="nav-menu" class="absolute md:relative duration-300 transition-all ease-in-out right-[-50rem] h-[90vh] md:h-[auto] flex flex-col p-4 mt-0 bg-secondary md:bg-transparent md:flex-row md:space-x-8 md:mt-0 md:text-sm md:border-0 z-[1000] w-full md:w-auto md:right-auto">
                             <li>
-                                <a href="index.html#about-section" class="block py-2 pr-4 pl-3 text-white rounded md:hover:bg-transparent md:border-0 md:p-0 hover:bg-gray-700 hover:text-third md:dark:hover:bg-transparen duration-300 md:before:h-[2px] before:duration-300 before:content-[''] before:absolute before:bg-third before:w-[0%] before:bottom-2 hover:before:w-[53px]">About</a>
+                                <a href="index.html#about-section" class="block py-2 pr-4 pl-3 text-white rounded md:hover:bg-transparent md:border-0 md:p-0 hover:bg-gray-700 hover:text-third md:dark:hover:bg-transparen duration-300 md:before:h-[2px] before:duration-300 before:content-[''] before:absolute before:bg-third before:w-[0%] before:bottom-2 hover:before:w-[53px]" onclick="about()">About</a>
                             </li>
                             <li>
                                 <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="flex justify-between items-center py-2 pr-4 pl-3 w-full text-primary rounded md:hover:bg-transparent md:border-0 hover:text-third md:p-0 md:w-auto dark:focus:text-white hover:bg-gray-700 md:dark:hover:bg-transparent duration-300 md:before:h-[2px] before:duration-300 before:content-[''] before:absolute before:bg-third before:w-[0%] before:bottom-2 hover:before:w-[92px] uppercase">
@@ -118,9 +118,9 @@
         
 
         <!-- Apa yang kami tawarkan -->
-        <div id="penawaran-section" class="container mx-auto px-4 md:px-0 flex flex-col items-center">
+        <div id="penawaran-section" class="container mx-auto mt-24 px-4 md:px-0 flex flex-col items-center">
             <div class="w-full sm:w-[550px] text-center">
-                <h1 class="mt-16 text-3xl font-bold mx-auto">Apa yang Kami Tawarkan</h1>
+                <h1 class="text-3xl font-bold mx-auto">Apa yang Kami Tawarkan</h1>
                 <p class="text-center mt-4">
                     Sebagai web designer dan developer, kami mengutamakan hal yang mampu
                               mengembangkan bisnis Anda lebih jauh lagi.
@@ -175,40 +175,42 @@
             </div>
         </div>
         <!-- Carousel -->
-        <div class="bg- container mx-auto mt-24 flex flex-col">
-            <div class="container bg-[#2e353b] mx-auto flex flex-col md:flex-row md:rounded-br-[300px]">
-                <div class="w-full sm:w-1/2 pb-0 p-8 md:p-16">
-                    <div class="owl-carousel owl-theme">
-                        <div class="item">
-                            <img src="./src/assets/images/portoflio/pf12s.jpg" alt="" srcset="" class="w-[100px]"/>
-                        </div>
-                        <div class="item">
-                            <img src="./src/assets/images/portoflio/pf2s.jpg" alt="" srcset=""/>
-                        </div>
-                        <div class="item">
-                            <img src="./src/assets/images/portoflio/pf13c.jpg" alt="" srcset=""/>
-                        </div>
-                        <div class="item">
-                            <img src="./src/assets/images/portoflio/pf14s.jpg" alt="" srcset=""/>
+        <div class="w-full bg-fourth">
+            <div class="bg- container mx-auto mt-24 flex flex-col">
+                <div class="container bg-[#2e353b] mx-auto flex flex-col md:flex-row md:rounded-br-[300px]">
+                    <div class="w-full sm:w-1/2 pb-0 p-8 md:p-16">
+                        <div class="owl-carousel owl-theme">
+                            <div class="item">
+                                <img src="./src/assets/images/portoflio/pf12s.jpg" alt="" srcset="" class="w-[100px]"/>
+                            </div>
+                            <div class="item">
+                                <img src="./src/assets/images/portoflio/pf2s.jpg" alt="" srcset=""/>
+                            </div>
+                            <div class="item">
+                                <img src="./src/assets/images/portoflio/pf13c.jpg" alt="" srcset=""/>
+                            </div>
+                            <div class="item">
+                                <img src="./src/assets/images/portoflio/pf14s.jpg" alt="" srcset=""/>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="p-8 md:pl-0 md:p-16 w-full md:w-1/2 flex flex-col ">
-                    <h1 class="text-3xl text-third font-bold text- mt-4 md:mt-0">
-                        Jasa Design Website dan Development Terbaik.
-                    </h1>
-                    <p class="mt-4 md:text-lg ">
-                        Fokus untuk mengembangkan bisnis Anda dan kami akan membantu Anda untuk
-                                    memilki sebuah website terbaik & berkualitas dengan harga ter-murah,
-                                    dibuat oleh para profesional yang sudah melayani lebih dari 5 tahun
-                                    di jasa pembutan website, jadi kami sangat mengerti desain website
-                                    yang di butuhkan untuk bisnis Anda.
-                    </p>
-                    <p class="mt-4 md:text-lg">
-                        Dengan proses order yang mudah, kami akan menyelesaikan semuanya
-                                    dalam waktu 2 hari saja.
-                    </p>
-                    <img src="./src/assets/images/services/home page.png" alt="" class="hidden 2xl:block w-80 mx-auto">
+                    <div class="p-8 md:pl-0 md:p-16 w-full md:w-1/2 flex flex-col ">
+                        <h1 class="text-3xl text-third font-bold text- mt-4 md:mt-0">
+                            Jasa Design Website dan Development Terbaik.
+                        </h1>
+                        <p class="mt-4 md:text-lg ">
+                            Fokus untuk mengembangkan bisnis Anda dan kami akan membantu Anda untuk
+                                        memilki sebuah website terbaik & berkualitas dengan harga ter-murah,
+                                        dibuat oleh para profesional yang sudah melayani lebih dari 5 tahun
+                                        di jasa pembutan website, jadi kami sangat mengerti desain website
+                                        yang di butuhkan untuk bisnis Anda.
+                        </p>
+                        <p class="mt-4 md:text-lg">
+                            Dengan proses order yang mudah, kami akan menyelesaikan semuanya
+                                        dalam waktu 2 hari saja.
+                        </p>
+                        <img src="./src/assets/images/services/home page.png" alt="" class="hidden 2xl:block w-80 m-auto">
+                    </div>
                 </div>
             </div>
         </div>
@@ -323,27 +325,30 @@
         </div>
 
         <!-- Tentang Kami -->
-        <div id="about-section" class=" bg-[#2e353b] shadow-mainShadow container mt-24 md:p-16 mx-auto flex flex-col md:flex-row h-full text-primary">
-            <div class="w-full sm:w-1/3 px-8 md:pr-16 md:pl-0 pt-8 sm:pt-0 ">
-                <img src="./src/assets/images/pictures/tentangkamiL.jpg" class="w-full mx-auto"/>
-            </div>
-            <div class="w-full sm:w-2/3 p-8 sm:p-0 ">
-                <h1 class="text-3xl font-bold text-third">Tentang Kami</h1>
-                <p class="mt-4">
-                    Eunoia adalah sebuah Web Designer sekaligus Web Developer yang
-                              berbasis di Surabaya, Indonesia. Beroperasi sejak 2017, sudah membantu
-                              hingga 150+ client di seluruh Indonesia. Kami menyediakan jasa
-                              pembuatan web mulai dari Company Profile, Toko Online, Web Travel, Web
-                              Booking, Web Sales, hingga Web Personal.
-                </p>
-                <p class="mt-4">
-                    Visi kami menjadi sebuah sentra industri software dengan kualifikasi dan kompetensi internasional, berorientasi bisnis secara profesional, sebagai partner yang dapat menyediakan solusi teknologi informasi terbaik untuk masyarakat Indonesia pada umumnya dan perusahaan-perusahaan pada khususnya, serta menjadi bagian penggerak kemajuan ekonomi di Indonesia melalui bidang IT. 
-                </p>
-                <p class="mt-4">
-                    Misi kami untuk berkontribusi dalam membangun dan mengembangkan usaha
-                              UMKM baik perseorangan, CV maupun PT pada era Digital Marketing
-                              melalui jasa desain web dan developmentnya.
-                </p>
+        <div class="w-full bg-fourth">
+
+            <div id="about-section" class=" bg-fourth container mt-24 md:p-16 mx-auto flex flex-col md:flex-row h-full">
+                <div class="w-full md:w-1/3 px-8 md:pr-16  md:pl-0 pt-8 md:pt-0 ">
+                    <img src="./src/assets/images/pictures/tentangkamiL.jpg" class="w-full mx-auto"/>
+                </div>
+                <div class="w-full sm:w-2/3 p-8 md:p-0 ">
+                    <h1 class="text-3xl font-bold text-third">Tentang Kami</h1>
+                    <p class="mt-4">
+                        Eunoia adalah sebuah Web Designer sekaligus Web Developer yang
+                                  berbasis di Surabaya, Indonesia. Beroperasi sejak 2017, sudah membantu
+                                  hingga 150+ client di seluruh Indonesia. Kami menyediakan jasa
+                                  pembuatan web mulai dari Company Profile, Toko Online, Web Travel, Web
+                                  Booking, Web Sales, hingga Web Personal.
+                    </p>
+                    <p class="mt-4">
+                        Visi kami menjadi sebuah sentra industri software dengan kualifikasi dan kompetensi internasional, berorientasi bisnis secara profesional, sebagai partner yang dapat menyediakan solusi teknologi informasi terbaik untuk masyarakat Indonesia pada umumnya dan perusahaan-perusahaan pada khususnya, serta menjadi bagian penggerak kemajuan ekonomi di Indonesia melalui bidang IT. 
+                    </p>
+                    <p class="mt-4">
+                        Misi kami untuk berkontribusi dalam membangun dan mengembangkan usaha
+                                  UMKM baik perseorangan, CV maupun PT pada era Digital Marketing
+                                  melalui jasa desain web dan developmentnya.
+                    </p>
+                </div>
             </div>
         </div>
 
@@ -368,7 +373,7 @@
 
         <!-- footer -->
         <div class="bg-[#2e353b] z-0 w-full flex flex-col mx-auto px-4 h-auto sm:h-auto mt-16 sm:px4">
-            <div class="container mx-auto b-red-400 text-primary flex flex-col sm:flex-row py-8">
+            <div class="container hidden md:block mx-auto b-red-400 text-primary md:flex flex-col sm:flex-row py-8">
                 <div class="w-full sm:w-1/2">
                     <div class="p-4 rounded-lg text-primary">
                         <img src="./src/assets/images/eunoia/eunoia.png" class="w-[250px]"/>
@@ -433,17 +438,16 @@
                     </div>
                 </div>
             </div>
-            <div class="container mx-auto border-t-2 border-third flex flex-col sm:flex-row justify-between">
-                <div class="mt-2 text-primary text-xs text-center space-x-2">
-                    <a href="" class="hover:text-third duration-300">PRIVACY POLICY
+            <div class="container mx-auto md:border-t-2 border-third flex flex-col sm:flex-row justify-between">
+                <div class="mt-8 md:mt-2 text-primary text-xs text-center space-x-2">
+                    <a href="#" class="hover:text-third duration-300">PRIVACY POLICY
                     </a>
-                    <a href="" class="hover:text-third duration-300">TERMS AND CONDITIONS
+                    <a href="#" class="hover:text-third duration-300">TERMS AND CONDITIONS
                     </a>
-                    <a href="" class="hover:text-third duration-300">NEWSLETTER
+                    <a href="#" class="hover:text-third duration-300">NEWSLETTER
                     </a>
                 </div>
-                <div
-                    class="mx-auto sm:mx-0 mt-16 sm:mt-2 text-primary flex space-x-2">
+                <div class="mx-auto sm:mx-0 mt-8 md:mt-2 text-primary flex space-x-2">
                     <!-- instagram -->
                     <a href="https://instagram.com/radyanbintang">
                         <svg class="w-[25px] fill-primary hover:fill-third duration-300" viewbox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
@@ -477,7 +481,7 @@
                     </a>
                 </div>
             </div>
-            <div class="bg-third container mx-auto mt-16 h-16 rounded-tl-[36px] rounded-tr-[36px] flex justify-center items-center">
+            <div class="bg-third container mx-auto mt-8 h-16 rounded-tl-[36px] rounded-tr-[36px] flex justify-center items-center">
                 <h1 class="font-medium text-primary">© 2022 ANXIETY</h1>
             </div>
         </div>

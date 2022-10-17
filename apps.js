@@ -2,15 +2,16 @@ function navMenu() {
   let listDefault = document.getElementById("list-default")
   let listActive = document.getElementById("list-active")
   let navMenu = document.getElementById("nav-menu");
-
+  
   listDefault.classList.toggle("block")
   listDefault.classList.toggle("hidden")
   listActive.classList.toggle("hidden")
   listActive.classList.toggle("block")
-
+  
   navMenu.classList.toggle("right-[-50rem]");
   navMenu.classList.toggle("right-0");
 }
+
 
 let PUstartup = document.getElementById("PUstartup");
 function CPstartup() {
